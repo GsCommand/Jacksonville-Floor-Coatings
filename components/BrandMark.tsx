@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function BrandMark({ inverse = false }: { inverse?: boolean }) { return <Link className={`brand-mark ${inverse ? "brand-mark-inverse" : ""}`} href="/" aria-label="Jacksonville Floor Coatings home"><span className="brand-monogram" aria-hidden="true">JF</span><span className="brand-wordmark"><span>Jacksonville</span><strong>Floor Coatings</strong></span></Link>; }

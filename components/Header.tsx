@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { BrandMark } from "@/components/BrandMark";
+import { primaryNav } from "@/lib/site";
+export function Header(){return <header className="site-header"><div className="header-inner shell"><BrandMark/><nav className="desktop-nav" aria-label="Primary navigation">{primaryNav.map((item)=><Link key={item.href} href={item.href}>{item.label}</Link>)}<Link href="/about">About</Link></nav><Link className="button button-dark header-cta" href="/contact">Request a consultation</Link><details className="mobile-menu"><summary aria-label="Open navigation"><span></span><span></span></summary><nav aria-label="Mobile navigation">{primaryNav.map((item)=><Link key={item.href} href={item.href}>{item.label}</Link>)}<Link href="/about">About</Link><Link href="/contact">Request a consultation</Link></nav></details></div></header>}
