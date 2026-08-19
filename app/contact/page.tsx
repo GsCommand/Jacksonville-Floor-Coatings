@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { ConsultationForm } from "@/components/ConsultationForm";
+export const metadata: Metadata = { title: "Request a Consultation", description: "Request a resin flooring or garage floor coating consultation with Jacksonville Floor Coatings." };
+export default function Contact(){return <main className="content-page shell contact-page"><div><p className="eyebrow">Request a consultation</p><h1>Show us the space.</h1><p className="lead">Send the room type, approximate square footage, neighborhood and a few details about the look you want. Photos can be added to the workflow once the lead system is connected.</p><p style={{fontSize:13,color:'#746d64',marginTop:32}}>Initial service area: Jacksonville, Nocatee, Ponte Vedra and St. Johns County.</p></div><ConsultationForm /></main>}
