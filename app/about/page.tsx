@@ -1,3 +1,36 @@
 import type { Metadata } from "next";
-export const metadata: Metadata = { title: "About", description: "Jacksonville Floor Coatings is a design-forward resin flooring and garage coating company serving Jacksonville and Northeast Florida." };
-export default function About(){return <main className="content-page shell"><p className="eyebrow">About Jacksonville Floor Coatings</p><h1>Luxury home improvement first. Coating expertise underneath.</h1><p className="lead">The company is being built around a simple gap in the market: most coating businesses sell resin like an industrial product. We want the customer to see the finished room first — especially kitchens, open living spaces and refined garages.</p><div className="content-grid"><article className="content-card"><h2>Design-led</h2><p>Named finishes, controlled palettes and room-aware composition make the buying experience easier to understand and the work easier to train and repeat.</p></article><article className="content-card"><h2>Process-led</h2><p>Preparation, system selection, cure requirements and site conditions are documented. The artistic side never replaces the technical side.</p></article><article className="content-card"><h2>Local-first</h2><p>Nocatee, Ponte Vedra, St. Johns County and Jacksonville are the initial focus. Real local projects will become the proof library for the brand.</p></article></div></main>}
+import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Jacksonville Floor Coatings is a design-forward resin flooring and garage coating company serving Jacksonville and Northeast Florida.",
+};
+
+export default function About() {
+  return (
+    <main className="content-page shell">
+      <p className="eyebrow">About Jacksonville Floor Coatings</p>
+      <h1>Luxury home improvement first. Coating expertise underneath.</h1>
+      <p className="lead">The company is being built around a simple gap in the market: most coating businesses sell resin like an industrial product. We want the customer to see the finished room first — especially kitchens, open living spaces and refined garages.</p>
+
+      <div className="about-story-grid">
+        <ImagePlaceholder
+          className="about-image-placeholder"
+          label="ABOUT — Owner / lead installer portrait"
+          detail="Professional but natural portrait in a finished residential space or on a clean project site. No hard-hat industrial look; this should feel like a premium home-improvement brand."
+        />
+        <ImagePlaceholder
+          className="about-process-placeholder"
+          label="PROCESS — Team installing a decorative resin floor"
+          detail="Real action photo showing controlled pouring, placement or finishing. Clean jobsite, proper PPE and enough room context to understand the craft."
+        />
+      </div>
+
+      <div className="content-grid">
+        <article className="content-card"><h2>Design-led</h2><p>Named finishes, controlled palettes and room-aware composition make the buying experience easier to understand and the work easier to train and repeat.</p></article>
+        <article className="content-card"><h2>Process-led</h2><p>Preparation, system selection, cure requirements and site conditions are documented. The artistic side never replaces the technical side.</p></article>
+        <article className="content-card"><h2>Local-first</h2><p>Nocatee, Ponte Vedra, St. Johns County and Jacksonville are the initial focus. Real local projects will become the proof library for the brand.</p></article>
+      </div>
+    </main>
+  );
+}
