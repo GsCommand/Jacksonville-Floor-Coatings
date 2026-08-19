@@ -1,13 +1,34 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ConsultationForm } from "@/components/ConsultationForm";
+import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { SectionHeading } from "@/components/SectionHeading";
 import { finishCollection } from "@/lib/site";
 
 const spaces = [
-  { title: "Home interiors", kicker: "The signature work", text: "Kitchens, open living areas and interior spaces where the floor becomes part of the architecture.", href: "/residential-resin-flooring", image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=86" },
-  { title: "Garage floors", kicker: "The everyday work", text: "Prepared coating systems with refined flake, quartz and solid-color palettes for garages that feel finished.", href: "/garage-floor-coatings", image: "https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=1400&q=84" },
-  { title: "Commercial spaces", kicker: "Built for business", text: "Design-conscious resin floors for retail, salons, studios, offices and showrooms.", href: "/commercial-floor-coatings", image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=84" },
+  {
+    title: "Home interiors",
+    kicker: "The signature work",
+    text: "Kitchens, open living areas and interior spaces where the floor becomes part of the architecture.",
+    href: "/residential-resin-flooring",
+    imageBrief: "HOME INTERIORS — Finished luxury kitchen / open living resin floor",
+    imageDetail: "Vertical/editorial composition. Show cabinetry, furniture and daylight so the floor reads as luxury home improvement, not a coating sample.",
+  },
+  {
+    title: "Garage floors",
+    kicker: "The everyday work",
+    text: "Prepared coating systems with refined flake, quartz and solid-color palettes for garages that feel finished.",
+    href: "/garage-floor-coatings",
+    imageBrief: "GARAGE FLOORS — Finished 2–3 car garage after coating",
+    imageDetail: "Wide clean garage with refined flake or quartz floor, finished walls/storage and enough floor area visible to understand the transformation.",
+  },
+  {
+    title: "Commercial spaces",
+    kicker: "Built for business",
+    text: "Design-conscious resin floors for retail, salons, studios, offices and showrooms.",
+    href: "/commercial-floor-coatings",
+    imageBrief: "COMMERCIAL — Salon, boutique, studio or showroom resin floor",
+    imageDetail: "Design-forward finished space. The room should feel premium and occupied; floor must remain clearly visible.",
+  },
 ];
 
 export default function Home() {
@@ -26,8 +47,11 @@ export default function Home() {
         </div>
         <div className="hero-gallery">
           <div className="hero-image hero-image-main">
-            <Image fill priority sizes="(max-width: 900px) 100vw, 54vw" src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1800&q=88" alt="Modern kitchen interior used as a visual direction reference for designer resin flooring" />
-            <div className="image-caption"><span>Design direction</span><strong>Interior first</strong></div>
+            <ImagePlaceholder
+              className="hero-image-placeholder"
+              label="HERO — Luxury kitchen + open living room with finished resin floor"
+              detail="Wide landscape image. Modern Nocatee/Ponte Vedra-style interior; neutral cabinetry; soft daylight; resin floor visible across roughly 35–45% of the frame. This should be the strongest image on the entire site."
+            />
           </div>
           <div className="hero-sample finish-pearl"><span>01</span><strong>Pearl Stone</strong><small>Soft / architectural</small></div>
         </div>
@@ -40,7 +64,7 @@ export default function Home() {
         <div className="space-grid">
           {spaces.map((space, index) => (
             <Link href={space.href} className={`space-card space-card-${index + 1}`} key={space.title}>
-              <Image fill sizes="(max-width: 800px) 100vw, 50vw" src={space.image} alt="" />
+              <ImagePlaceholder label={space.imageBrief} detail={space.imageDetail} />
               <div className="space-overlay"></div>
               <div className="space-content"><p>{space.kicker}</p><h3>{space.title}</h3><span>{space.text}</span><b>Explore <em>↗</em></b></div>
             </Link>
@@ -50,7 +74,12 @@ export default function Home() {
 
       <section className="section design-story">
         <div className="shell design-story-grid">
-          <div className="design-story-visual visual-pearl"><div className="design-story-card"><span>Design study 01</span><strong>Pearl Stone</strong><p>Warm white field · graphite movement · low contrast</p></div></div>
+          <div className="design-story-visual">
+            <ImagePlaceholder
+              label="SIGNATURE INTERIOR — Pearl Stone kitchen / open living project"
+              detail="Finished real project once available. Low-contrast warm white and graphite movement. Photograph from room height with cabinetry, island and adjacent living area visible."
+            />
+          </div>
           <div className="design-story-copy">
             <p className="eyebrow">Residential resin, reconsidered</p>
             <h2>Not an epoxy floor dropped into a kitchen. A floor designed for the kitchen.</h2>
@@ -75,10 +104,11 @@ export default function Home() {
       <section className="section dark-section">
         <div className="shell garage-editorial">
           <div className="garage-copy"><p className="eyebrow eyebrow-light">Garage collection</p><h2>The practical side of the business should still look designed.</h2><p>Garage floors keep the calendar moving. We will standardize preparation, flake and quartz systems while presenting palettes that actually complement Northeast Florida homes.</p><Link href="/garage-floor-coatings" className="button button-light">Explore garage floors</Link></div>
-          <div className="garage-board">
-            <div className="garage-chip garage-chip-1"></div><div className="garage-chip garage-chip-2"></div><div className="garage-chip garage-chip-3"></div>
-            <div className="garage-board-copy"><span>Garage palette study</span><strong>Coastal Graphite</strong><small>Warm gray · charcoal · off-white</small></div>
-          </div>
+          <ImagePlaceholder
+            className="garage-photo-placeholder"
+            label="GARAGE FEATURE — Upscale Nocatee / Ponte Vedra 3-car garage"
+            detail="Finished coating job. Wide horizontal view from driveway or rear corner. Refined gray/off-white palette; clean walls and storage; floor should dominate the lower half of frame."
+          />
         </div>
       </section>
 
@@ -87,7 +117,7 @@ export default function Home() {
         <div className="process-home-grid">{["Discover", "Design", "Prepare", "Pour", "Protect", "Reveal"].map((item, index) => <div key={item}><span>{String(index + 1).padStart(2, "0")}</span><strong>{item}</strong></div>)}</div>
       </section>
 
-      <section className="section local-feature"><div className="shell local-grid"><div><p className="eyebrow">Start local</p><h2>Nocatee and Ponte Vedra are where this brand should become recognizable.</h2><p>We are building a local-first project library around high-end residential interiors and garages, then expanding that proof across Jacksonville and Northeast Florida.</p><div className="local-links"><Link href="/service-areas/nocatee-floor-coatings">Nocatee floor coatings ↗</Link><Link href="/service-areas/jacksonville-floor-coatings">Jacksonville floor coatings ↗</Link></div></div><div className="local-visual"><span>NE FL</span><strong>Design-forward floors.<br/>Built close to home.</strong></div></div></section>
+      <section className="section local-feature"><div className="shell local-grid"><div><p className="eyebrow">Start local</p><h2>Nocatee and Ponte Vedra are where this brand should become recognizable.</h2><p>We are building a local-first project library around high-end residential interiors and garages, then expanding that proof across Jacksonville and Northeast Florida.</p><div className="local-links"><Link href="/service-areas/nocatee-floor-coatings">Nocatee floor coatings ↗</Link><Link href="/service-areas/jacksonville-floor-coatings">Jacksonville floor coatings ↗</Link></div></div><ImagePlaceholder className="local-photo-placeholder" label="LOCAL PROOF — Completed Nocatee / Ponte Vedra project" detail="Use a recognizable upscale-home context: finished interior or garage with enough surrounding architecture to feel local and residential. This eventually becomes a real project link." /></div></section>
 
       <section className="section shell consultation-panel home-consultation"><div><p className="eyebrow">Start with the space</p><h2>Show us the room you want to change.</h2><p>Send photos, approximate square footage and the look you are after. We will use that to guide the first design conversation.</p></div><ConsultationForm compact /></section>
     </main>
