@@ -9,6 +9,7 @@ export function Header() {
         <BrandMark />
         <nav className="desktop-nav" aria-label="Primary navigation">
           {primaryNav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+          <Link href="/learning-center">Learn</Link>
           <Link href="/about">About</Link>
         </nav>
         <Link className="button button-dark header-cta" href="/contact">Get a quote</Link>
@@ -16,6 +17,7 @@ export function Header() {
           <summary aria-label="Open navigation"><span></span><span></span></summary>
           <nav aria-label="Mobile navigation">
             {primaryNav.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+            <Link href="/learning-center">Learning Center</Link>
             <Link href="/commercial-floor-coatings">Commercial</Link>
             <Link href="/about">About</Link>
             <Link href="/contact">Get a quote</Link>
