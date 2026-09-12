@@ -22,8 +22,8 @@ export function Footer() {
           <div className="footer-links">
             <Link href="/service-areas/jacksonville-floor-coatings">Jacksonville</Link>
             <Link href="/service-areas/nocatee-floor-coatings">Nocatee</Link>
-            <span>Ponte Vedra</span>
-            <span>St. Johns County</span>
+            <Link href="/service-areas/ponte-vedra-floor-coatings">Ponte Vedra</Link>
+            <Link href="/service-areas/st-johns-floor-coatings">St. Johns</Link>
           </div>
         </div>
         <div>
