@@ -3,11 +3,11 @@ import { ServicePage } from "@/components/ServicePage";
 import { servicePages } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Resin Flooring Jacksonville FL",
-  description: servicePages.resin.metaDescription,
-  alternates: { canonical: "/resin-flooring-jacksonville" },
+  title: "Epoxy Flooring Jacksonville FL",
+  description: servicePages.epoxy.metaDescription,
+  alternates: { canonical: "/epoxy-flooring-jacksonville" },
 };
 
 export default function Page() {
-  return <ServicePage data={servicePages.resin} />;
+  return <ServicePage data={servicePages.epoxy} />;
 }

@@ -1,33 +1,34 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ConsultationForm } from "@/components/ConsultationForm";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { SectionHeading } from "@/components/SectionHeading";
 import { finishCollection } from "@/lib/site";
 
-const spaces = [
+export const metadata: Metadata = {
+  title: "Epoxy Flooring Jacksonville FL | Garage Floor Coatings",
+  description: "Jacksonville epoxy flooring, garage floor coatings, polyaspartic systems and designer resin floors. Professional concrete preparation and coating systems for Northeast Florida.",
+  alternates: { canonical: "/" },
+};
+
+const services = [
   {
-    title: "Home interiors",
-    kicker: "The signature work",
-    text: "Kitchens, open living areas and interior spaces where the floor becomes part of the architecture.",
-    href: "/residential-resin-flooring",
-    imageBrief: "HOME INTERIORS — Finished luxury kitchen / open living resin floor",
-    imageDetail: "Vertical/editorial composition. Show cabinetry, furniture and daylight so the floor reads as luxury home improvement, not a coating sample.",
-  },
-  {
-    title: "Garage floors",
-    kicker: "The everyday work",
-    text: "Prepared coating systems with refined flake, quartz and solid-color palettes for garages that feel finished.",
+    title: "Garage floor coatings",
+    kicker: "High-use concrete",
+    text: "Full-flake, quartz and resinous garage systems with mechanical preparation, repair work and a finish selected for vehicle traffic and open-door exposure.",
     href: "/garage-floor-coatings",
-    imageBrief: "GARAGE FLOORS — Finished 2–3 car garage after coating",
-    imageDetail: "Wide clean garage with refined flake or quartz floor, finished walls/storage and enough floor area visible to understand the transformation.",
   },
   {
-    title: "Commercial spaces",
-    kicker: "Built for business",
-    text: "Design-conscious resin floors for retail, salons, studios, offices and showrooms.",
-    href: "/commercial-floor-coatings",
-    imageBrief: "COMMERCIAL — Salon, boutique, studio or showroom resin floor",
-    imageDetail: "Design-forward finished space. The room should feel premium and occupied; floor must remain clearly visible.",
+    title: "Epoxy flooring",
+    kicker: "The broad category",
+    text: "Professional resinous flooring for garages, homes and light commercial spaces — with the actual chemistry selected around the slab and application.",
+    href: "/epoxy-flooring-jacksonville",
+  },
+  {
+    title: "Metallic resin floors",
+    kicker: "Design-forward interiors",
+    text: "Custom marble-inspired and movement-based floors for kitchens, studios, showrooms and statement spaces where the floor is part of the design.",
+    href: "/metallic-epoxy-flooring",
   },
 ];
 
@@ -36,37 +37,43 @@ export default function Home() {
     <main>
       <section className="home-hero shell wide-shell">
         <div className="home-hero-copy">
-          <p className="eyebrow">Jacksonville · Nocatee · Northeast Florida</p>
-          <h1>Beautiful resin floors for your home. <em>Tough coatings for your garage.</em></h1>
-          <p className="hero-copy">Jacksonville Floor Coatings is being built as a design-forward flooring studio: custom resin interiors first, practical garage systems every day.</p>
+          <p className="eyebrow">Jacksonville · Nocatee · Ponte Vedra · St. Johns</p>
+          <h1>Epoxy flooring in Jacksonville, <em>finished like it belongs there.</em></h1>
+          <p className="hero-copy">
+            Jacksonville Floor Coatings installs garage floor coatings, polyaspartic systems and designer resin floors with one priority underneath every finish: prepare the concrete correctly and build the system for the way the space is actually used.
+          </p>
           <div className="hero-actions">
-            <Link className="button button-dark" href="/finishes">Explore floor designs</Link>
-            <Link className="text-link" href="/contact">Request a consultation <span>↗</span></Link>
+            <Link className="button button-dark" href="/contact">Request a floor consultation</Link>
+            <Link className="text-link" href="/garage-floor-coatings">Explore garage floors <span>↗</span></Link>
           </div>
-          <div className="hero-notes"><span>Designer resin interiors</span><span>Garage floor coatings</span><span>Commercial spaces</span></div>
+          <div className="hero-notes">
+            <span>Mechanical preparation</span>
+            <span>Garage floor systems</span>
+            <span>Designer resin interiors</span>
+          </div>
         </div>
         <div className="hero-gallery">
-          <div className="hero-image hero-image-main">
-            <ImagePlaceholder
-              className="hero-image-placeholder"
-              label="HERO — Luxury kitchen + open living room with finished resin floor"
-              detail="Wide landscape image. Modern Nocatee/Ponte Vedra-style interior; neutral cabinetry; soft daylight; resin floor visible across roughly 35–45% of the frame. This should be the strongest image on the entire site."
-            />
-          </div>
-          <div className="hero-sample finish-pearl"><span>01</span><strong>Pearl Stone</strong><small>Soft / architectural</small></div>
+          <div className="hero-image hero-image-main"><ImagePlaceholder className="hero-image-placeholder" /></div>
+          <div className="hero-sample finish-pearl"><span>Signature finish</span><strong>Pearl Stone</strong><small>Soft / architectural</small></div>
         </div>
       </section>
 
-      <section className="editorial-strip"><div className="shell"><span>Designer resin interiors</span><i></i><span>Garage floor systems</span><i></i><span>Jacksonville & St. Johns</span></div></section>
+      <section className="editorial-strip">
+        <div className="shell"><span>Epoxy flooring</span><i></i><span>Polyaspartic systems</span><i></i><span>Garage floor coatings</span><i></i><span>Metallic resin</span></div>
+      </section>
 
       <section className="section shell">
-        <SectionHeading eyebrow="Choose your space" title="The room leads. The coating system follows." copy="Most coating companies begin with chemistry. We begin with where the floor lives, what it should look like, and what it needs to withstand." />
+        <SectionHeading
+          eyebrow="Floor coating services"
+          title="The right floor starts with the use case — not a product label."
+          copy="Homeowners often search for epoxy flooring. The finished system may use epoxy, polyaspartic or another resin chemistry depending on the slab, cure window, UV exposure and design goal."
+        />
         <div className="space-grid">
-          {spaces.map((space, index) => (
-            <Link href={space.href} className={`space-card space-card-${index + 1}`} key={space.title}>
-              <ImagePlaceholder label={space.imageBrief} detail={space.imageDetail} />
-              <div className="space-overlay"></div>
-              <div className="space-content"><p>{space.kicker}</p><h3>{space.title}</h3><span>{space.text}</span><b>Explore <em>↗</em></b></div>
+          {services.map((service, index) => (
+            <Link href={service.href} className={`space-card space-card-${index + 1}`} key={service.title}>
+              <ImagePlaceholder />
+              <div className="space-overlay" />
+              <div className="space-content"><p>{service.kicker}</p><h3>{service.title}</h3><span>{service.text}</span><b>Explore <em>↗</em></b></div>
             </Link>
           ))}
         </div>
@@ -74,23 +81,43 @@ export default function Home() {
 
       <section className="section design-story">
         <div className="shell design-story-grid">
-          <div className="design-story-visual">
-            <ImagePlaceholder
-              label="SIGNATURE INTERIOR — Pearl Stone kitchen / open living project"
-              detail="Finished real project once available. Low-contrast warm white and graphite movement. Photograph from room height with cabinetry, island and adjacent living area visible."
-            />
-          </div>
+          <div className="design-story-visual"><ImagePlaceholder /></div>
           <div className="design-story-copy">
-            <p className="eyebrow">Residential resin, reconsidered</p>
-            <h2>Not an epoxy floor dropped into a kitchen. A floor designed for the kitchen.</h2>
-            <p>Cabinetry, natural light, wall color, sight lines and furniture should influence the finish. Our design collections are being built around complete rooms rather than isolated pigment samples.</p>
-            <Link className="text-link" href="/residential-resin-flooring">Residential resin flooring <span>↗</span></Link>
+            <p className="eyebrow">Preparation first</p>
+            <h2>Pretty coatings fail when the concrete underneath is ignored.</h2>
+            <p>Existing paint, failed coatings, contamination, cracks, surface profile and moisture risk all matter. We evaluate the slab before choosing the coating build so the proposal addresses the floor you actually have.</p>
+            <Link className="text-link" href="/epoxy-flooring-jacksonville">How professional epoxy flooring is built <span>↗</span></Link>
           </div>
         </div>
       </section>
 
       <section className="section shell">
-        <div className="collection-heading"><SectionHeading eyebrow="The finish collection" title="Choose a feeling before you choose a formula." copy="Named design directions make custom resin easier to understand. Each finish can evolve from soft to balanced to dramatic while keeping its core palette." /><Link href="/finishes" className="text-link">View the collection <span>↗</span></Link></div>
+        <SectionHeading eyebrow="Garage floor coatings Jacksonville" title="A practical service with a better design standard." copy="Garage floors are the repeatable core: mechanically prepared concrete, repairs where required, a controlled broadcast or coating system, and a protective finish selected for the environment." />
+        <div className="three-grid benefit-grid">
+          <article className="number-card"><span>01</span><h3>Full-flake systems</h3><p>Dense decorative broadcast systems for a consistent finished appearance and everyday garage use.</p></article>
+          <article className="number-card"><span>02</span><h3>Polyaspartic options</h3><p>Fast-curing, UV-stable finish options when the site conditions and complete system support them.</p></article>
+          <article className="number-card"><span>03</span><h3>Concrete repair</h3><p>Cracks, spalls, edges and failed coatings are addressed as part of the preparation scope rather than hidden under a new finish.</p></article>
+        </div>
+        <div className="hero-actions"><Link href="/garage-floor-coatings" className="button button-dark">Garage floor coatings</Link><Link href="/polyaspartic-floor-coatings" className="text-link">Polyaspartic flooring <span>↗</span></Link></div>
+      </section>
+
+      <section className="section dark-section">
+        <div className="shell garage-editorial">
+          <div className="garage-copy">
+            <p className="eyebrow eyebrow-light">Designer resin</p>
+            <h2>The premium side of floor coatings should feel like interior design.</h2>
+            <p>Metallic and movement-based resin floors are developed around palette, contrast, sight lines and the room itself. The goal is controlled visual direction, not random swirls sold as custom work.</p>
+            <Link href="/metallic-epoxy-flooring" className="button button-light">Explore metallic floors</Link>
+          </div>
+          <ImagePlaceholder className="garage-photo-placeholder" />
+        </div>
+      </section>
+
+      <section className="section shell">
+        <div className="collection-heading">
+          <SectionHeading eyebrow="Signature finishes" title="A finish collection customers can actually understand." copy="Named design directions make decorative resin easier to specify. Each palette can move from restrained to dramatic while keeping its core character." />
+          <Link href="/finishes" className="text-link">View all finishes <span>↗</span></Link>
+        </div>
         <div className="finish-grid">
           {finishCollection.map((finish, index) => (
             <article className="finish-card" key={finish.name}>
@@ -101,25 +128,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section dark-section">
-        <div className="shell garage-editorial">
-          <div className="garage-copy"><p className="eyebrow eyebrow-light">Garage collection</p><h2>The practical side of the business should still look designed.</h2><p>Garage floors keep the calendar moving. We will standardize preparation, flake and quartz systems while presenting palettes that actually complement Northeast Florida homes.</p><Link href="/garage-floor-coatings" className="button button-light">Explore garage floors</Link></div>
-          <ImagePlaceholder
-            className="garage-photo-placeholder"
-            label="GARAGE FEATURE — Upscale Nocatee / Ponte Vedra 3-car garage"
-            detail="Finished coating job. Wide horizontal view from driveway or rear corner. Refined gray/off-white palette; clean walls and storage; floor should dominate the lower half of frame."
-          />
+      <section className="section local-feature">
+        <div className="shell local-grid">
+          <div>
+            <p className="eyebrow">Northeast Florida</p>
+            <h2>Jacksonville first. Nocatee, Ponte Vedra and St. Johns built into the service area.</h2>
+            <p>Local pages focus on the actual coating services offered in each area instead of duplicating generic city copy. As completed projects grow, those pages can become the project library for each market.</p>
+            <div className="local-links"><Link href="/service-areas/nocatee-floor-coatings">Nocatee floor coatings ↗</Link><Link href="/service-areas/jacksonville-floor-coatings">Jacksonville service area ↗</Link></div>
+          </div>
+          <ImagePlaceholder className="local-photo-placeholder" />
         </div>
       </section>
 
-      <section className="section shell">
-        <SectionHeading eyebrow="The process" title="Discover. Design. Prepare. Pour. Protect. Reveal." copy="A simple client experience on the surface, with disciplined preparation and system selection underneath." />
-        <div className="process-home-grid">{["Discover", "Design", "Prepare", "Pour", "Protect", "Reveal"].map((item, index) => <div key={item}><span>{String(index + 1).padStart(2, "0")}</span><strong>{item}</strong></div>)}</div>
+      <section className="section shell consultation-panel home-consultation">
+        <div><p className="eyebrow">Get a floor recommendation</p><h2>Tell us what you have, how you use it and what you want it to become.</h2><p>Share the approximate square footage, current floor condition, project type and neighborhood. We can use that to narrow the right next step.</p></div>
+        <ConsultationForm compact />
       </section>
-
-      <section className="section local-feature"><div className="shell local-grid"><div><p className="eyebrow">Start local</p><h2>Nocatee and Ponte Vedra are where this brand should become recognizable.</h2><p>We are building a local-first project library around high-end residential interiors and garages, then expanding that proof across Jacksonville and Northeast Florida.</p><div className="local-links"><Link href="/service-areas/nocatee-floor-coatings">Nocatee floor coatings ↗</Link><Link href="/service-areas/jacksonville-floor-coatings">Jacksonville floor coatings ↗</Link></div></div><ImagePlaceholder className="local-photo-placeholder" label="LOCAL PROOF — Completed Nocatee / Ponte Vedra project" detail="Use a recognizable upscale-home context: finished interior or garage with enough surrounding architecture to feel local and residential. This eventually becomes a real project link." /></div></section>
-
-      <section className="section shell consultation-panel home-consultation"><div><p className="eyebrow">Start with the space</p><h2>Show us the room you want to change.</h2><p>Send photos, approximate square footage and the look you are after. We will use that to guide the first design conversation.</p></div><ConsultationForm compact /></section>
     </main>
   );
 }
