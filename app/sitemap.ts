@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/commercial-floor-coatings", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/finishes", priority: 0.75, changeFrequency: "monthly" as const },
     { path: "/service-areas/nocatee-floor-coatings", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/service-areas/ponte-vedra-floor-coatings", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/service-areas/st-johns-floor-coatings", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/service-areas/jacksonville-floor-coatings", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/about", priority: 0.6, changeFrequency: "yearly" as const },
     { path: "/contact", priority: 0.7, changeFrequency: "yearly" as const },
