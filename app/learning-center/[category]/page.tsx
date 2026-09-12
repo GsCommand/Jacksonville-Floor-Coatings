@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!category) return {};
 
   return {
-    title: `${category.name} Guides | Jacksonville Floor Coatings`,
+    title: `${category.name} Guides`,
     description: category.description,
     alternates: { canonical: `/learning-center/${category.slug}` },
     openGraph: {
