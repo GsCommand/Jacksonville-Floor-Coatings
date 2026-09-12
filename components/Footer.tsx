@@ -33,7 +33,7 @@ export function Footer() {
           <a className="footer-small" href={`mailto:${site.email}`}>{site.email}</a>
         </div>
       </div>
-      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} Jacksonville Floor Coatings</span><span>Professional preparation. Better-looking floor systems.</span></div>
+      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} Jacksonville Floor Coatings · <Link href="/privacy">Privacy</Link></span><span>Professional preparation. Better-looking floor systems.</span></div>
     </footer>
   );
 }
