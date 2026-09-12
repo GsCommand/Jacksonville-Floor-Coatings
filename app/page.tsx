@@ -133,7 +133,7 @@ export default function Home() {
           <div>
             <p className="eyebrow">Northeast Florida</p>
             <h2>Jacksonville first. Nocatee, Ponte Vedra and St. Johns built into the service area.</h2>
-            <p>Local pages focus on the actual coating services offered in each area instead of duplicating generic city copy. As completed projects grow, those pages can become the project library for each market.</p>
+            <p>From Jacksonville garages to Nocatee, Ponte Vedra and St. Johns homes, we bring the same preparation-first process and finish standards across Northeast Florida.</p>
             <div className="local-links"><Link href="/service-areas/nocatee-floor-coatings">Nocatee floor coatings ↗</Link><Link href="/service-areas/jacksonville-floor-coatings">Jacksonville service area ↗</Link></div>
           </div>
           <ImagePlaceholder className="local-photo-placeholder" />
