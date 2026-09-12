@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { articlePath, learningArticles, learningCategories } from "@/lib/learning-center";
 import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -12,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/residential-resin-flooring", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/commercial-floor-coatings", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/finishes", priority: 0.75, changeFrequency: "monthly" as const },
+    { path: "/learning-center", priority: 0.9, changeFrequency: "weekly" as const },
     { path: "/service-areas/nocatee-floor-coatings", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/service-areas/ponte-vedra-floor-coatings", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/service-areas/st-johns-floor-coatings", priority: 0.8, changeFrequency: "monthly" as const },
@@ -21,7 +23,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/privacy", priority: 0.3, changeFrequency: "yearly" as const },
   ];
 
-  return entries.map((entry) => ({
+  const categoryEntries = learningCategories.map((category) => ({
+    path: `/learning-center/${category.slug}`,
+    priority: 0.76,
+    changeFrequency: "monthly" as const,
+  }));
+
+  const articleEntries = learningArticles.map((article) => ({
+    path: articlePath(article),
+    priority: 0.72,
+    changeFrequency: "monthly" as const,
+  }));
+
+  return [...entries, ...categoryEntries, ...articleEntries].map((entry) => ({
     url: `${site.url}${entry.path}`,
     changeFrequency: entry.changeFrequency,
     priority: entry.priority,

@@ -11,10 +11,11 @@ export function Footer() {
           <p>Epoxy flooring, garage floor coatings, polyaspartic systems and designer resin floors across Jacksonville and Northeast Florida.</p>
         </div>
         <div>
-          <p className="footer-kicker">Services</p>
+          <p className="footer-kicker">Services & resources</p>
           <div className="footer-links">
             {primaryNav.map((item) => <Link href={item.href} key={item.href}>{item.label}</Link>)}
             <Link href="/commercial-floor-coatings">Commercial coatings</Link>
+            <Link href="/learning-center">Learning Center</Link>
           </div>
         </div>
         <div>
