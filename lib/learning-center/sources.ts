@@ -155,6 +155,13 @@ export const learningSources: Record<string, LearningSource> = {
     url: "https://www.hellogarage.com/blog/comparing-polyaspartic-and-epoxy-garage-floor-coatings/",
     note: "Large contractor/franchise comparison; product claims should be weighed against manufacturer data."
   },
+  noaaJax: {
+    id: "noaaJax",
+    name: "Jacksonville 1991–2020 Climate Normals",
+    publisher: "NOAA National Centers for Environmental Information",
+    url: "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&endDate=9996-12-31&format=pdf&startDate=0001-01-01&stations=USW00013889",
+    note: "Official Jacksonville climate normals, including monthly precipitation and temperature context."
+  },
 };
 
 export function resolveSources(ids: string[]): LearningSource[] {
