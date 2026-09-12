@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const canonical = articlePath(article);
   return {
-    title: `${article.title} | Jacksonville Floor Coatings`,
+    title: article.title,
     description: article.description,
     authors: [{ name: site.name }],
     alternates: { canonical },
