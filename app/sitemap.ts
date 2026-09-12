@@ -1,6 +1,26 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/lib/site";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const paths=["","/resin-flooring-jacksonville","/residential-resin-flooring","/garage-floor-coatings","/metallic-epoxy-flooring","/commercial-floor-coatings","/finishes","/about","/contact","/service-areas/nocatee-floor-coatings","/service-areas/jacksonville-floor-coatings"];
-  return paths.map((path)=>({url:`${site.url}${path}`,lastModified:new Date(),changeFrequency:path===""?"weekly":"monthly",priority: path === "" ? 1 : path.includes("service-areas") ? 0.8 : 0.9}));
+  const entries = [
+    { path: "", priority: 1, changeFrequency: "weekly" as const },
+    { path: "/epoxy-flooring-jacksonville", priority: 0.95, changeFrequency: "monthly" as const },
+    { path: "/garage-floor-coatings", priority: 0.95, changeFrequency: "monthly" as const },
+    { path: "/polyaspartic-floor-coatings", priority: 0.9, changeFrequency: "monthly" as const },
+    { path: "/metallic-epoxy-flooring", priority: 0.9, changeFrequency: "monthly" as const },
+    { path: "/resin-flooring-jacksonville", priority: 0.85, changeFrequency: "monthly" as const },
+    { path: "/residential-resin-flooring", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/commercial-floor-coatings", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/finishes", priority: 0.75, changeFrequency: "monthly" as const },
+    { path: "/service-areas/nocatee-floor-coatings", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/service-areas/jacksonville-floor-coatings", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/about", priority: 0.6, changeFrequency: "yearly" as const },
+    { path: "/contact", priority: 0.7, changeFrequency: "yearly" as const },
+  ];
+
+  return entries.map((entry) => ({
+    url: `${site.url}${entry.path}`,
+    changeFrequency: entry.changeFrequency,
+    priority: entry.priority,
+  }));
 }
