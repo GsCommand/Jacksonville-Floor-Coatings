@@ -1,3 +1,4 @@
+import { applyArticleExpansions } from "./article-expansions";
 import { costArticles } from "./articles-cost";
 import { designArticles } from "./articles-design";
 import { floridaArticles } from "./articles-florida";
@@ -40,7 +41,7 @@ export const learningCategories: LearningCategory[] = [
   }
 ];
 
-export const learningArticles: LearningArticle[] = [
+const baseArticles: LearningArticle[] = [
   ...costArticles,
   ...garageArticles,
   ...preparationArticles,
@@ -48,6 +49,8 @@ export const learningArticles: LearningArticle[] = [
   ...floridaArticles,
   ...designArticles,
 ];
+
+export const learningArticles: LearningArticle[] = baseArticles.map(applyArticleExpansions);
 
 export const articleByRoute = new Map(
   learningArticles.map((article) => [`${article.category}/${article.slug}`, article])
