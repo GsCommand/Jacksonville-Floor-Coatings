@@ -1,0 +1,17 @@
+{
+  "mode": "Built-in image generation",
+  "prompts": [
+    {
+      "name": "full-flake-system",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide landscape photo-style educational illustration for a garage floor coating website card. A finished contemporary Florida two-car garage, viewed from low knee height with the foreground floor occupying most of the frame. Dense full-broadcast small gray, white and charcoal decorative vinyl flakes sealed under a restrained satin clear finish, evenly covered across the floor. White walls, simple gray cabinets at the back, neat uncluttered space, no vehicles or people. Realistic texture and natural daylight. Landscape 3:2 composition suitable for cropping to 16:10. No text, no logos, no watermark. This is a design visualization, not a documented project."
+    },
+    {
+      "name": "cracks-failed-coatings",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide landscape educational photo-style illustration for a concrete preparation website card. Close low oblique view of an older garage concrete floor before restoration. A realistic narrow nonstructural crack crosses the middle foreground, with small patches of peeling gray paint and worn coating edges exposing concrete. Dry surface, restrained natural tones, white garage wall and gray baseboard softly visible in the background. Clearly show the damaged surface without dramatic structural destruction. No tools, no people, no staging props. Natural documentary lighting, crisp concrete texture. Landscape 3:2 suitable for 16:10 crop. No text, no logos, no watermark."
+    },
+    {
+      "name": "uv-open-door",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide landscape photo-style educational illustration for a Florida garage floor coating website card. View from inside a tidy modern garage looking outward through its raised garage door into a sunlit Florida residential driveway with a subtle palm tree beyond. The finished gray decorative flake floor fills the lower two thirds. Afternoon sunlight creates a clearly defined sunlit zone near the threshold and shade deeper inside. Realistic satin floor reflection, clean white walls and door tracks, driveway outside uncoated concrete. No vehicles, no people. Sun exposure is the subject; do not show a before-after, discoloration or claims of damage. Landscape 3:2 composition suitable for cropping to 16:10. No text, no logos, no watermark."
+    }
+  ]
+}
