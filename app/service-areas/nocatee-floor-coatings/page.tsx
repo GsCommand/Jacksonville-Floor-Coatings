@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ConsultationForm } from "@/components/ConsultationForm";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
-import { SectionHeading } from "@/components/SectionHeading";
+import { PageHero, DesignCards, DesignImage, QuoteSection, GuideLinks } from "@/components/Design";
+import { navigationServices, serviceAreas } from "@/lib/design";
 
 export const metadata: Metadata = {
   title: "Nocatee Floor Coatings | Garage, Epoxy & Resin Floors",
@@ -10,39 +9,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/service-areas/nocatee-floor-coatings" },
 };
 
-export default function Nocatee() {
-  return (
-    <main>
-      <section className="local-hero shell">
-        <p className="eyebrow">Nocatee, Florida</p>
-        <h1>Garage floor coatings and designer resin floors for Nocatee homes.</h1>
-        <p>Jacksonville Floor Coatings serves Nocatee with full-flake garage systems, epoxy and polyaspartic options, and decorative resin flooring for concrete-slab interiors. The recommendation starts with the slab, the use of the space and the look you want.</p>
-        <div className="hero-actions"><Link href="/contact" className="button button-dark">Request a quote</Link><Link href="/garage-floor-coatings" className="text-link">Garage floor coatings <span>↗</span></Link></div>
-
-        <div className="local-page-image-grid"><ImagePlaceholder className="local-page-image-primary" /><ImagePlaceholder className="local-page-image-secondary" /></div>
-
-        <div className="local-cards">
-          <article className="local-card"><h2>2- & 3-car garages</h2><p>Mechanically prepared full-flake, quartz and resinous systems for garages that function as parking, storage, workshops or home gyms.</p></article>
-          <article className="local-card"><h2>Polyaspartic options</h2><p>UV-stable and faster-curing finish options where the product, site conditions and project schedule support them.</p></article>
-          <article className="local-card"><h2>Designer interiors</h2><p>Neutral and movement-based resin finishes for concrete-slab interiors where a seamless custom floor fits the room.</p></article>
-        </div>
-      </section>
-
-      <section className="section design-story">
-        <div className="shell">
-          <SectionHeading eyebrow="Built for the home" title="A Nocatee garage floor should complement the house, not look like an industrial afterthought." copy="Color blends, sheen and texture can be selected around cabinetry, wall color, lighting and how the garage is used while still prioritizing concrete preparation and coating performance." />
-          <div className="three-grid benefit-grid">
-            <article className="number-card"><span>01</span><h3>Preparation</h3><p>Existing coatings, cracks, edges and slab condition are evaluated before the new system is installed.</p></article>
-            <article className="number-card"><span>02</span><h3>Design</h3><p>Flake blends and decorative finishes are chosen as part of the finished space rather than from a generic chip board alone.</p></article>
-            <article className="number-card"><span>03</span><h3>Use</h3><p>Vehicle traffic, home-gym use, storage, sunlight and cleaning expectations influence the final recommendation.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section className="section shell consultation-panel">
-        <div><p className="eyebrow">Nocatee floor quote</p><h2>Tell us the garage or room size and what is on the floor now.</h2><p>Square footage, existing coating or bare concrete, visible cracks and the finish direction are enough to start the conversation.</p></div>
-        <ConsultationForm compact />
-      </section>
-    </main>
-  );
-}
+export default function LocalPage() { return <main id="main-content">
+<PageHero eyebrow="Nocatee, FLORIDA" title="Garage floor coatings and designer resin floors for Nocatee homes." intro="Jacksonville Floor Coatings serves Nocatee with full-flake garage systems, epoxy and polyaspartic options, and decorative resin flooring for concrete-slab interiors. The recommendation starts with the slab, the use of the space and the look you want." image="/images/home/hero.webp" secondary="Garage floor systems" secondaryHref="/garage-floor-coatings"/>
+<section className="design-section shell"><div className="design-section-head"><p className="jfc-script">Make the garage part of the home.</p><h2>Find the floor for your Nocatee space.</h2><p>Choose a practical garage system or a decorative interior direction, with preparation and cure requirements built into the plan.</p></div><div className="design-local-services">{navigationServices.map(service=><Link key={service.href} href={service.href}><DesignImage src={`/images/home/${service.image}.webp`} alt={`${service.title} design concept`}/><h3>{service.title}</h3><span>EXPLORE THE SERVICE →</span></Link>)}</div></section>
+<section className="design-tint"><div className="shell design-split"><div><p className="eyebrow">LOCAL CONDITIONS. A TAILORED SYSTEM.</p><h2>Start with your concrete and your everyday use.</h2><p>Whether the garage is used for parking, storage or a home gym, the floor should coordinate with the home and match its everyday use.</p><p>Newer concrete still needs evaluation and preparation. Tell us the slab age, any curing treatments, existing coating and how soon you need to use the space again.</p><Link className="text-link" href="/learning-center/florida-jacksonville">Explore Florida floor coating guides →</Link></div><DesignImage src="/images/finishes/champagne-vein.webp" alt="Coastal Florida decorative resin interior concept"/></div></section>
+<section className="design-section shell"><div className="design-section-head"><p className="jfc-script">The details make the difference.</p><h2>Clear expectations from the beginning.</h2></div><DesignCards items={[
+{title:"Evaluate the slab",body:"Review existing paint, adhesives, cracks, contamination and moisture concerns before selecting the coating build."},
+{title:"Choose the finish",body:"Use samples to compare color and texture. Sunlight, cabinetry and room use influence the final choice."},
+{title:"Plan the installation",body:"Confirm removal, repairs, access and separate cure instructions for walking, furniture and vehicle traffic."}]}/></section>
+<section className="design-tint"><div className="shell design-split"><div><p className="jfc-script">Answers for your project.</p><h2>Nocatee floor coating questions.</h2></div><div className="design-faq"><details><summary>Can you coat a floor that already has paint or epoxy?</summary><p>The existing surface needs evaluation. Loose or unsuitable coatings may need removal before the new system is installed. That work is included in the preparation scope when required.</p></details><details><summary>Can I choose a color to match my home?</summary><p>Yes, finish direction and sample selection can be considered alongside walls, cabinets and lighting. Actual products and availability are confirmed during the consultation.</p></details><details><summary>How soon can I park or move furniture back?</summary><p>The selected products and site conditions determine the cure schedule. Installation completion does not mean the floor is ready for every type of traffic.</p></details><details><summary>Do you serve my address?</summary><p>Send your ZIP code and project location with the request so we can confirm coverage and discuss access.</p></details></div></div></section>
+<GuideLinks category="florida-jacksonville"/><section className="design-related shell"><h2>Explore our Northeast Florida service areas.</h2><div>{serviceAreas.map(([label,href])=><Link key={href} href={href}>{label} →</Link>)}</div></section><QuoteSection title="Let’s plan your Nocatee floor." copy="Newer concrete still needs evaluation and preparation. Tell us the slab age, any curing treatments, existing coating and how soon you need to use the space again."/></main>; }

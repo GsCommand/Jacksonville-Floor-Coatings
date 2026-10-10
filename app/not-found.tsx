@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="content-page shell">
+    <main id="main-content" className="design-policy shell">
       <p className="eyebrow">404</p>
       <h1>That floor plan does not exist.</h1>
       <p className="lead">The page may have moved, or the link may be outdated. Start from the main Jacksonville floor-coating pages below.</p>

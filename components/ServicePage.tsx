@@ -1,121 +1,23 @@
 import Link from "next/link";
 import Script from "next/script";
-import { ConsultationForm } from "@/components/ConsultationForm";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
-import { SectionHeading } from "@/components/SectionHeading";
+import { PageHero, DesignCards, DesignImage, QuoteSection, GuideLinks } from "@/components/Design";
+import { serviceDesign, navigationServices } from "@/lib/design";
 import { site, type ServicePageData } from "@/lib/site";
-
 export function ServicePage({ data }: { data: ServicePageData }) {
-  const schema = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      name: data.eyebrow,
-      description: data.metaDescription,
-      url: `${site.url}/${data.slug}`,
-      provider: { "@id": `${site.url}/#business` },
-      areaServed: ["Jacksonville, FL", "Nocatee, FL", "Ponte Vedra, FL", "St. Johns County, FL"],
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: data.faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.q,
-        acceptedAnswer: { "@type": "Answer", text: faq.a },
-      })),
-    },
-  ];
-
-  return (
-    <main>
-      <section className="service-hero shell wide-shell">
-        <div className="service-hero-copy">
-          <p className="eyebrow">{data.eyebrow}</p>
-          <h1>{data.title}</h1>
-          <p className="hero-copy">{data.intro}</p>
-          <div className="hero-actions">
-            <Link className="button button-dark" href="/contact">Request a floor consultation</Link>
-            <Link className="text-link" href="/finishes">Explore finishes <span>↗</span></Link>
-          </div>
-          {data.price ? <p className="price-note">{data.price}</p> : null}
-        </div>
-        <div className={`service-visual ${data.visualClass}`}><ImagePlaceholder className="service-image-placeholder" /></div>
-      </section>
-
-      <section className="application-strip">
-        <div className="shell application-grid">{data.applications.map((application) => <span key={application}>{application}</span>)}</div>
-      </section>
-
-      <section className="section shell">
-        <SectionHeading eyebrow="Why the system matters" title="The finish gets attention. The preparation and coating build earn trust." />
-        <div className="three-grid benefit-grid">
-          {data.benefits.map((benefit, index) => (
-            <article className="number-card" key={benefit.title}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <h3>{benefit.title}</h3>
-              <p>{benefit.body}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      {data.details?.length ? (
-        <section className="section design-story">
-          <div className="shell">
-            <SectionHeading eyebrow="What to know" title="A floor coating is a system, not a can of product." copy="The details below are where professional coating work separates from a quick cosmetic application." />
-            <div className="three-grid benefit-grid">
-              {data.details.map((detail, index) => (
-                <article className="number-card" key={detail.title}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <h3>{detail.title}</h3>
-                  <p>{detail.body}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : null}
-
-      <section className="section process-section">
-        <div className="shell process-layout">
-          <SectionHeading eyebrow="Installation process" title="A clear sequence from slab evaluation to return-to-service." copy="Every project starts with the substrate and use case. Preparation, repairs, coating sequence and cure requirements are documented around the selected system." />
-          <ol className="process-list">{data.process.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span><strong>{step}</strong></li>)}</ol>
-        </div>
-      </section>
-
-      <section className="section shell faq-layout">
-        <SectionHeading eyebrow="Questions" title="What Jacksonville property owners usually want to know first." />
-        <div className="faq-list">{data.faqs.map((faq) => <details key={faq.q}><summary>{faq.q}<span>+</span></summary><p>{faq.a}</p></details>)}</div>
-      </section>
-
-      <section className="section local-feature">
-        <div className="shell local-grid">
-          <div>
-            <p className="eyebrow">Compare the options</p>
-            <h2>Start with the floor you have. Then choose the chemistry and finish.</h2>
-            <p>Garage systems, epoxy, polyaspartic and metallic resin overlap, but they are not interchangeable. The best recommendation depends on slab condition, exposure, design goal and return-to-service requirements.</p>
-            <div className="local-links">
-              <Link href="/epoxy-flooring-jacksonville">Epoxy flooring ↗</Link>
-              <Link href="/garage-floor-coatings">Garage coatings ↗</Link>
-              <Link href="/polyaspartic-floor-coatings">Polyaspartic ↗</Link>
-              <Link href="/metallic-epoxy-flooring">Metallic resin ↗</Link>
-            </div>
-          </div>
-          <ImagePlaceholder className="local-photo-placeholder" />
-        </div>
-      </section>
-
-      <section className="section shell consultation-panel">
-        <div>
-          <p className="eyebrow">Request a recommendation</p>
-          <h2>Tell us about the slab, the space and the finish you want.</h2>
-          <p>Share the project type, approximate square footage, current floor condition and neighborhood. That is enough to start narrowing the right coating system and estimate path.</p>
-        </div>
-        <ConsultationForm compact />
-      </section>
-
-      <Script id={`schema-${data.slug}`} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-    </main>
-  );
+ const design=serviceDesign[data.slug];
+ const schema=[{"@context":"https://schema.org","@type":"Service",name:data.eyebrow,description:data.metaDescription,url:`${site.url}/${data.slug}`,provider:{"@id":`${site.url}/#business`},areaServed:["Jacksonville, FL","Nocatee, FL","Ponte Vedra, FL","St. Johns County, FL"]},{"@context":"https://schema.org","@type":"FAQPage",mainEntity:data.faqs.map(faq=>({"@type":"Question",name:faq.q,acceptedAnswer:{"@type":"Answer",text:faq.a}}))}];
+ return <main id="main-content">
+ <PageHero eyebrow={data.eyebrow} title={data.title} intro={data.intro} image={design.image}/>
+ <div className="design-applications"><div className="shell">{data.applications.map(item=><span key={item}>✓ {item}</span>)}</div></div>
+ <section className="design-section shell"><div className="design-section-head"><p className="jfc-script">{design.note}</p><h2>Beautiful on the surface. Considered underneath.</h2><p>Build the floor around your concrete, your space and your everyday use.</p></div><DesignCards items={data.benefits}/></section>
+ <section className="design-tint"><div className="shell design-split"><DesignImage src={data.slug.includes("resin") || data.slug.includes("metallic") ? "/images/finishes/ivory-cloud.webp" : "/images/home/prep.webp"} alt="Floor finish and preparation concept"/><div><p className="eyebrow">THE DETAILS THAT MATTER</p><h2>A floor coating is a complete system.</h2>{design.highlights.map(item=><div className="design-detail" key={item.title}><h3>{item.title}</h3><p>{item.body}</p></div>)}</div></div></section>
+ {data.details?.length ? <section className="design-section shell"><div className="design-section-head"><p className="jfc-script">Look beyond the finish.</p><h2>What to know before choosing your coating.</h2></div><DesignCards items={data.details}/></section> : null}
+ <section className="design-process"><div className="shell design-split"><div><p className="jfc-script">From the first look to the final coat.</p><h2>Your installation, step by step.</h2><p>The concrete and selected products determine the working sequence. Repair scope, site conditions and cure requirements are confirmed before work begins.</p><p className="design-callout">Installation time is different from cure time. Your return-to-use instructions cover foot traffic, furniture and vehicles separately.</p></div><ol>{data.process.map((step,index)=><li key={step}><span>{String(index+1).padStart(2,"0")}</span><strong>{step}</strong></li>)}</ol></div></section>
+ <section className="design-section shell design-split"><div><p className="jfc-script">A clear scope. A confident choice.</p><h2>What goes into your estimate?</h2><p>Actual square footage, existing coating removal, repairs, moisture requirements and the decorative build all influence the proposal.</p>{data.price ? <p className="design-callout">{data.price}</p> : null}<Link href="/learning-center/cost-pricing" className="text-link">Explore cost and pricing guides →</Link></div><div className="design-checklist"><h3>Compare proposals on the full scope.</h3><ul><li>Preparation method and removal work</li><li>Crack, spall and edge repairs</li><li>Base coat, decorative layer and topcoat</li><li>Texture, sheen and physical color sample</li><li>Access, cure schedule and aftercare</li><li>Written terms and any exclusions</li></ul></div></section>
+ <section className="design-tint"><div className="shell design-split"><div><p className="jfc-script">Good questions. Clear answers.</p><h2>Before you book your floor.</h2><p>Choose the answer you need, or send us the details of your space for a project-specific recommendation.</p></div><div className="design-faq">{data.faqs.map(faq=><details key={faq.q}><summary>{faq.q}</summary><p>{faq.a}</p></details>)}</div></div></section>
+ <GuideLinks category={design.category}/>
+ <section className="design-related shell"><h2>Find the finish for your space.</h2><div>{navigationServices.filter(s=>s.href!==`/${data.slug}`).map(s=><Link key={s.href} href={s.href}>{s.title} →</Link>)}</div></section>
+ <QuoteSection/>
+ <Script id={`schema-${data.slug}`} type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/>
+ </main>;
 }

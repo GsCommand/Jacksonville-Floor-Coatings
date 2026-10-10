@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Privacy() {
   return (
-    <main className="content-page shell">
+    <main id="main-content" className="design-policy shell">
       <p className="eyebrow">Privacy</p>
       <h1>Privacy Policy</h1>
       <p className="lead">Jacksonville Floor Coatings uses the information you provide to respond to quote requests, discuss projects and operate this website.</p>
@@ -23,7 +23,7 @@ export default function Privacy() {
         <p>You can ask us to correct or delete information you submitted, subject to records we may need to retain for legitimate business, legal or accounting purposes.</p>
         <h2>Contact</h2>
         <p>Questions about this policy can be sent to <a href={`mailto:${site.email}`}><strong>{site.email}</strong></a>.</p>
-        <p style={{ fontSize: 13, color: "#746d64", marginTop: 32 }}>Last updated: September 12, 2026.</p>
+        <p style={{ fontSize: 13, color: "#626c73", marginTop: 32 }}>Last updated: September 12, 2026.</p>
       </div>
     </main>
   );

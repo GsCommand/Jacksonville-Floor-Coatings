@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
-import "./placeholders.css";
+import "./home.css";
+import "./redesign.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { site } from "@/lib/site";
@@ -73,7 +74,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
   return (
     <html lang="en">
-      <body>
+      <body className="jfc-home">
         <Header />
         {children}
         <Footer />

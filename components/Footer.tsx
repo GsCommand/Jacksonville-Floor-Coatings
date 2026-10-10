@@ -1,40 +1,6 @@
 import Link from "next/link";
 import { BrandMark } from "@/components/BrandMark";
-import { primaryNav, site } from "@/lib/site";
-
-export function Footer() {
-  return (
-    <footer className="site-footer">
-      <div className="shell footer-grid">
-        <div className="footer-brand">
-          <BrandMark inverse />
-          <p>Epoxy flooring, garage floor coatings, polyaspartic systems and designer resin floors across Jacksonville and Northeast Florida.</p>
-        </div>
-        <div>
-          <p className="footer-kicker">Services & resources</p>
-          <div className="footer-links">
-            {primaryNav.map((item) => <Link href={item.href} key={item.href}>{item.label}</Link>)}
-            <Link href="/commercial-floor-coatings">Commercial coatings</Link>
-            <Link href="/learning-center">Learning Center</Link>
-          </div>
-        </div>
-        <div>
-          <p className="footer-kicker">Service areas</p>
-          <div className="footer-links">
-            <Link href="/service-areas/jacksonville-floor-coatings">Jacksonville</Link>
-            <Link href="/service-areas/nocatee-floor-coatings">Nocatee</Link>
-            <Link href="/service-areas/ponte-vedra-floor-coatings">Ponte Vedra</Link>
-            <Link href="/service-areas/st-johns-floor-coatings">St. Johns</Link>
-          </div>
-        </div>
-        <div>
-          <p className="footer-kicker">Start a project</p>
-          <p className="footer-small">Tell us the floor type, approximate square footage, condition and the finish you are considering.</p>
-          <Link className="text-link text-link-light" href="/contact">Request a quote <span>↗</span></Link>
-          <a className="footer-small" href={`mailto:${site.email}`}>{site.email}</a>
-        </div>
-      </div>
-      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} Jacksonville Floor Coatings · <Link href="/privacy">Privacy</Link></span><span>Professional preparation. Better-looking floor systems.</span></div>
-    </footer>
-  );
-}
+import { serviceAreas as areas } from "@/lib/design";
+export function Footer() { return <>
+    <footer className="jfc-footer"><div className="jfc-container jfc-footer-grid"><div><BrandMark inverse/><p>Garage floor coatings, epoxy, polyaspartic systems and designer resin floors for Northeast Florida.</p></div><div><h3>EXPLORE</h3><Link href="/garage-floor-coatings">Garage floors</Link><Link href="/metallic-epoxy-flooring">Metallic resin</Link><Link href="/commercial-floor-coatings">Commercial coatings</Link><Link href="/learning-center">Learning Center</Link></div><div><h3>SERVICE AREAS</h3>{areas.map(([name,href])=><Link href={href} key={name}>{name}</Link>)}</div><div><h3>START A PROJECT</h3><p>Tell us about your floor and the look you have in mind.</p><a href="mailto:hello@jacksonvillefloorcoatings.com">hello@jacksonvillefloorcoatings.com</a><Link href="/contact">Request a consultation →</Link></div></div><div className="jfc-container jfc-footer-bottom"><span>© {new Date().getFullYear()} Jacksonville Floor Coatings</span><div><Link href="/privacy">Privacy</Link><a href="/sitemap.xml">Sitemap</a></div></div></footer>
+<Link className="jfc-floating-quote" href="/contact">GET A QUOTE <span aria-hidden="true">→</span></Link></>; }

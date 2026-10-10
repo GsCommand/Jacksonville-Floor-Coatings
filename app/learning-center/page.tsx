@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import { categoryImages } from "@/lib/design";
+import { DesignImage } from "@/components/Design";
 import styles from "./learning-center.module.css";
 import {
   articlePath,
@@ -65,7 +68,7 @@ export default function LearningCenterPage() {
   };
 
   return (
-    <main className={styles.hub}>
+    <main id="main-content" className={styles.hub}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -73,6 +76,8 @@ export default function LearningCenterPage() {
 
       <div className="shell">
         <header className={styles.hero}>
+          <DesignImage src="/images/home/hero.webp" alt="Gray flake garage floor design concept" className={styles.hubImage} priority/>
+          <div>
           <p className={styles.eyebrow}>Jacksonville Floor Coatings Resources</p>
           <h1>Learning Center</h1>
           <p>
@@ -84,6 +89,7 @@ export default function LearningCenterPage() {
             <div><strong>30</strong><span>Detailed guides</span></div>
             <div><strong>6</strong><span>Buyer-focused topics</span></div>
             <div><strong>Florida</strong><span>Climate-aware guidance</span></div>
+          </div>
           </div>
         </header>
 
@@ -99,7 +105,7 @@ export default function LearningCenterPage() {
               const count = learningArticles.filter((article) => article.category === category.slug).length;
               return (
                 <Link className={styles.categoryCard} href={`/learning-center/${category.slug}`} key={category.slug}>
-                  <span>{count} guides</span>
+                  <div className={styles.categoryPhoto}><Image src={categoryImages[category.slug]} alt="" fill sizes="(max-width:640px) 100vw, 33vw"/></div><span>{count} guides</span>
                   <h2>{category.name}</h2>
                   <p>{category.description}</p>
                   <b>Browse {category.name} →</b>
@@ -119,7 +125,7 @@ export default function LearningCenterPage() {
           <div className={styles.articleGrid}>
             {featured.map((article) => (
               <Link className={styles.articleCard} href={articlePath(article)} key={article.slug}>
-                <small>{learningCategories.find((category) => category.slug === article.category)?.name}</small>
+                <div className={styles.cardPhoto}><Image src={categoryImages[article.category]} alt="" fill sizes="(max-width:640px) 100vw, 50vw"/></div><small>{learningCategories.find((category) => category.slug === article.category)?.name}</small>
                 <h3>{article.title}</h3>
                 <p>{article.description}</p>
                 <span>Read guide →</span>

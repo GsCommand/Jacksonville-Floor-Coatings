@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ConsultationForm } from "@/components/ConsultationForm";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
-import { SectionHeading } from "@/components/SectionHeading";
+import { PageHero, DesignCards, DesignImage, QuoteSection, GuideLinks } from "@/components/Design";
+import { navigationServices, serviceAreas } from "@/lib/design";
 
 export const metadata: Metadata = {
   title: "Jacksonville Floor Coatings | Epoxy, Garage & Resin Floors",
@@ -10,39 +9,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/service-areas/jacksonville-floor-coatings" },
 };
 
-export default function Jacksonville() {
-  return (
-    <main>
-      <section className="local-hero shell">
-        <p className="eyebrow">Jacksonville, Florida</p>
-        <h1>Floor coatings for Jacksonville garages, homes and design-forward commercial spaces.</h1>
-        <p>Jacksonville Floor Coatings serves the Jacksonville area with mechanically prepared garage floor systems, epoxy and polyaspartic options, metallic resin floors and light-commercial coatings. This page is the local service hub; the homepage remains the primary Jacksonville epoxy-flooring page.</p>
-        <div className="hero-actions"><Link href="/contact" className="button button-dark">Request a quote</Link><Link href="/epoxy-flooring-jacksonville" className="text-link">Epoxy flooring Jacksonville <span>↗</span></Link></div>
-
-        <div className="local-page-image-grid"><ImagePlaceholder className="local-page-image-primary" /><ImagePlaceholder className="local-page-image-secondary" /></div>
-
-        <div className="local-cards">
-          <article className="local-card"><h2>Garage floor coatings</h2><p>Full-flake and resinous systems for two- and three-car garages, workshops, home gyms and finished storage spaces.</p><Link href="/garage-floor-coatings" className="text-link">Garage systems ↗</Link></article>
-          <article className="local-card"><h2>Epoxy & polyaspartic</h2><p>Coating chemistry selected around concrete condition, cure requirements, UV exposure and the way the floor is used.</p><Link href="/polyaspartic-floor-coatings" className="text-link">Polyaspartic options ↗</Link></article>
-          <article className="local-card"><h2>Designer resin</h2><p>Metallic and seamless decorative floors for interiors, studios, salons, showrooms and statement spaces.</p><Link href="/metallic-epoxy-flooring" className="text-link">Metallic floors ↗</Link></article>
-        </div>
-      </section>
-
-      <section className="section design-story">
-        <div className="shell">
-          <SectionHeading eyebrow="Jacksonville concrete conditions" title="The local environment matters more than a coating brand name." copy="Heat, humidity, open garage doors, exterior-edge sunlight and the condition of an existing slab all affect how a floor should be evaluated and installed." />
-          <div className="three-grid benefit-grid">
-            <article className="number-card"><span>01</span><h3>Slab evaluation</h3><p>Existing coatings, contamination, cracks, spalling and moisture risk are reviewed before the system is specified.</p></article>
-            <article className="number-card"><span>02</span><h3>UV exposure</h3><p>Garages and commercial spaces near doors can receive significant Florida sunlight, making finish chemistry and color stability relevant.</p></article>
-            <article className="number-card"><span>03</span><h3>Use-based design</h3><p>A working garage, home gym, salon and kitchen do not need the same texture, sheen or coating build.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <section className="section shell consultation-panel">
-        <div><p className="eyebrow">Jacksonville floor quote</p><h2>Start with the slab and square footage.</h2><p>Tell us the ZIP code, approximate size, current floor condition and whether the space is a garage, interior or commercial project.</p></div>
-        <ConsultationForm compact />
-      </section>
-    </main>
-  );
-}
+export default function LocalPage() { return <main id="main-content">
+<PageHero eyebrow="Jacksonville, FLORIDA" title="Floor coatings for Jacksonville garages, homes and design-forward commercial spaces." intro="Jacksonville Floor Coatings serves the Jacksonville area with mechanically prepared garage floor systems, epoxy and polyaspartic options, metallic resin floors and light-commercial coatings." image="/images/home/garage.webp" secondary="Garage floor systems" secondaryHref="/garage-floor-coatings"/>
+<section className="design-section shell"><div className="design-section-head"><p className="jfc-script">From working garages to statement interiors.</p><h2>Find the floor for your Jacksonville space.</h2><p>Choose a practical garage system or a decorative interior direction, with preparation and cure requirements built into the plan.</p></div><div className="design-local-services">{navigationServices.map(service=><Link key={service.href} href={service.href}><DesignImage src={`/images/home/${service.image}.webp`} alt={`${service.title} design concept`}/><h3>{service.title}</h3><span>EXPLORE THE SERVICE →</span></Link>)}</div></section>
+<section className="design-tint"><div className="shell design-split"><div><p className="eyebrow">LOCAL CONDITIONS. A TAILORED SYSTEM.</p><h2>Start with your concrete and your everyday use.</h2><p>Heat, humidity and sunlight at an open garage door all matter when choosing a system. We review existing coatings and contamination along with the finish you want.</p><p>Jacksonville projects can range from older painted slabs to newer bare concrete. Tell us the ZIP code, visible damage and current surface so removal and preparation can be considered early.</p><Link className="text-link" href="/learning-center/florida-jacksonville">Explore Florida floor coating guides →</Link></div><DesignImage src="/images/finishes/atlantic-stone.webp" alt="Coastal Florida decorative resin interior concept"/></div></section>
+<section className="design-section shell"><div className="design-section-head"><p className="jfc-script">The details make the difference.</p><h2>Clear expectations from the beginning.</h2></div><DesignCards items={[
+{title:"Evaluate the slab",body:"Review existing paint, adhesives, cracks, contamination and moisture concerns before selecting the coating build."},
+{title:"Choose the finish",body:"Use samples to compare color and texture. Sunlight, cabinetry and room use influence the final choice."},
+{title:"Plan the installation",body:"Confirm removal, repairs, access and separate cure instructions for walking, furniture and vehicle traffic."}]}/></section>
+<section className="design-tint"><div className="shell design-split"><div><p className="jfc-script">Answers for your project.</p><h2>Jacksonville floor coating questions.</h2></div><div className="design-faq"><details><summary>Can you coat a floor that already has paint or epoxy?</summary><p>The existing surface needs evaluation. Loose or unsuitable coatings may need removal before the new system is installed. That work is included in the preparation scope when required.</p></details><details><summary>Can I choose a color to match my home?</summary><p>Yes, finish direction and sample selection can be considered alongside walls, cabinets and lighting. Actual products and availability are confirmed during the consultation.</p></details><details><summary>How soon can I park or move furniture back?</summary><p>The selected products and site conditions determine the cure schedule. Installation completion does not mean the floor is ready for every type of traffic.</p></details><details><summary>Do you serve my address?</summary><p>Send your ZIP code and project location with the request so we can confirm coverage and discuss access.</p></details></div></div></section>
+<GuideLinks category="florida-jacksonville"/><section className="design-related shell"><h2>Explore our Northeast Florida service areas.</h2><div>{serviceAreas.map(([label,href])=><Link key={href} href={href}>{label} →</Link>)}</div></section><QuoteSection title="Let’s plan your Jacksonville floor." copy="Jacksonville projects can range from older painted slabs to newer bare concrete. Tell us the ZIP code, visible damage and current surface so removal and preparation can be considered early."/></main>; }

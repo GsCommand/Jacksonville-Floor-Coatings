@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import { categoryImages } from "@/lib/design";
+import { DesignImage } from "@/components/Design";
 import { notFound } from "next/navigation";
 import styles from "../learning-center.module.css";
 import {
@@ -78,7 +81,7 @@ export default async function LearningCategoryPage({ params }: Props) {
   };
 
   return (
-    <main className={styles.categoryPage}>
+    <main id="main-content" className={styles.categoryPage}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="shell">
         <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
@@ -88,15 +91,18 @@ export default async function LearningCategoryPage({ params }: Props) {
         </nav>
 
         <header className={styles.categoryHero}>
+          <div>
           <p className={styles.eyebrow}>Jacksonville Floor Coatings Learning Center</p>
           <h1>{category.name}</h1>
           <p>{category.description}</p>
+          </div>
+          <DesignImage src={categoryImages[category.slug]} alt={`${category.name} floor concept`} priority/>
         </header>
 
         <section className={styles.categoryList} aria-label={`${category.name} guides`}>
           {articles.map((article, index) => (
             <Link className={styles.categoryArticle} href={articlePath(article)} key={article.slug}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
+              <div className={styles.listPhoto}><Image src={categoryImages[category.slug]} alt="" fill sizes="(max-width:640px) 100vw, 160px"/><span>{String(index + 1).padStart(2, "0")}</span></div>
               <div>
                 <h2>{article.title}</h2>
                 <p>{article.description}</p>

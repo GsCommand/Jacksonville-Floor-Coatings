@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { categoryImages } from "@/lib/design";
+import { DesignImage } from "@/components/Design";
 import { notFound } from "next/navigation";
 import styles from "../../learning-center.module.css";
 import {
@@ -109,7 +111,7 @@ export default async function LearningArticlePage({ params }: Props) {
   };
 
   return (
-    <main className={styles.article}>
+    <main id="main-content" className={styles.article}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <article className={styles.articleShell}>
         <nav className={styles.breadcrumbs} aria-label="Breadcrumb">
@@ -129,17 +131,21 @@ export default async function LearningArticlePage({ params }: Props) {
           </p>
         </header>
 
+        <DesignImage src={categoryImages[article.category]} alt={`${categoryData?.name} floor concept`} className={styles.articleImage} priority/>
+
         <section className={styles.quickAnswer} aria-label="Quick answer">
           <strong>Quick answer</strong>
           <p>{article.quickAnswer}</p>
         </section>
 
+        <nav className={styles.toc} aria-label="In this guide"><strong>In this guide</strong>{article.sections.map((section,index)=><a href={`#guide-section-${index+1}`} key={section.heading}>{section.heading}</a>)}</nav>
+
         <div className={styles.intro}>
           {article.intro.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
         </div>
 
-        {article.sections.map((section) => (
-          <section className={styles.section} key={section.heading}>
+        {article.sections.map((section,index) => (
+          <section id={`guide-section-${index+1}`} className={styles.section} key={section.heading}>
             <h2>{section.heading}</h2>
             {section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             {section.bullets?.length ? (

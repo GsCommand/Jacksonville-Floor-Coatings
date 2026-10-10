@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FormEvent, useRef, useState } from "react";
 import { ConsultationForm } from "@/components/ConsultationForm";
-import { BrandMark } from "@/components/BrandMark";
+import { navigationServices as services, serviceAreas as areas } from "@/lib/design";
+
 
 const spaces = [
   { name: "2-car garage", title: "A better everyday garage", text: "A coordinated full-flake finish for parking, projects, storage and everything in between.", image: "garage", href: "/garage-floor-coatings" },
@@ -13,13 +14,6 @@ const spaces = [
   { name: "3-car garage", title: "A finish worthy of the space", text: "Give a larger garage a consistent, intentional appearance from the threshold to the far wall.", image: "hero", href: "/garage-floor-coatings" },
   { name: "Commercial", title: "Make a strong first impression", text: "Resinous floors selected for the traffic, appearance and maintenance needs of your business.", image: "commercial", href: "/commercial-floor-coatings" },
 ];
-const services = [
-  { title: "GARAGE FLOORS", image: "garage", href: "/garage-floor-coatings" },
-  { title: "POLYASPARTIC", image: "hero", href: "/polyaspartic-floor-coatings" },
-  { title: "METALLIC RESIN", image: "metallic", href: "/metallic-epoxy-flooring" },
-  { title: "HOME INTERIORS", image: "metallic", href: "/residential-resin-flooring" },
-  { title: "COMMERCIAL FLOORS", image: "commercial", href: "/commercial-floor-coatings" },
-];
 const blends = [
   { name: "Coastal Gray", image: "coastal-gray", description: "Light gray · charcoal · white" },
   { name: "Sandstone", image: "sandstone", description: "Warm beige · ivory · taupe" },
@@ -27,13 +21,6 @@ const blends = [
   { name: "Tuxedo", image: "tuxedo", description: "White · black" },
   { name: "Blue Tide", image: "blue-tide", description: "Slate blue · gray · white" },
 ];
-const areas = [
-  ["Jacksonville", "/service-areas/jacksonville-floor-coatings"],
-  ["Nocatee", "/service-areas/nocatee-floor-coatings"],
-  ["Ponte Vedra", "/service-areas/ponte-vedra-floor-coatings"],
-  ["St. Johns", "/service-areas/st-johns-floor-coatings"],
-];
-
 function CheckIcon() { return <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" strokeWidth="2"/><path d="m11 20 6 7L32 9" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/></svg>; }
 
 function AreaCheck() {
@@ -50,17 +37,10 @@ function AreaCheck() {
 
 export function HomePage() {
   const track = useRef<HTMLDivElement>(null);
-  const serviceMenu = useRef<HTMLDetailsElement>(null);
   const [selected, setSelected] = useState(0);
-  const [menuOpen, setMenuOpen] = useState(false);
   function move(direction: number) { const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches; track.current?.scrollBy({ left: direction * (track.current.clientWidth * 0.8), behavior: reduced ? "instant" : "smooth" }); }
   return <div className="jfc-home">
-    <a className="jfc-skip" href="#home-content">Skip to content</a>
-    <header className="jfc-header">
-      <div className="jfc-topbar"><div className="jfc-container"><span>JACKSONVILLE & NORTHEAST FLORIDA</span><nav aria-label="Quick links"><a href="#service-area">OUR SERVICE AREA</a><a href="#quote">REQUEST A QUOTE</a></nav></div></div>
-      <div className="jfc-nav jfc-container"><BrandMark/><button className="jfc-menu-button" aria-expanded={menuOpen} aria-controls="home-navigation" onClick={()=>{ setMenuOpen(!menuOpen); if (serviceMenu.current) serviceMenu.current.open = false; }}>{menuOpen ? "Close ✕" : "Menu ☰"}</button><nav id="home-navigation" className={menuOpen ? "is-open" : ""} aria-label="Homepage navigation" onClick={(event)=>{ if ((event.target as HTMLElement).closest("a")) { setMenuOpen(false); if (serviceMenu.current) serviceMenu.current.open = false; } }}><Link href="/about">ABOUT US</Link><details className="jfc-service-menu" ref={serviceMenu} onKeyDown={(event)=>{ if (event.key === "Escape") { event.preventDefault(); event.currentTarget.open = false; event.currentTarget.querySelector("summary")?.focus(); } }} onBlur={(event)=>{ if (!event.currentTarget.contains(event.relatedTarget as Node | null)) event.currentTarget.open = false; }}><summary>OUR SERVICES <span aria-hidden="true">⌄</span></summary><div className="jfc-service-dropdown"><p>From everyday garages to statement interiors, find a finish that fits your home or business.</p><div className="jfc-dropdown-grid">{services.map(service=><Link key={service.title} href={service.href} className="jfc-dropdown-card"><span className="jfc-dropdown-photo"><Image src={`/images/home/${service.image}.webp`} alt="" fill sizes="(max-width: 800px) 80px, 180px"/></span><span>{service.title}</span><span aria-hidden="true">→</span></Link>)}</div></div></details><a href="#colors">COLORS</a><a href="#service-area">WHO WE SERVE</a><Link href="/learning-center">LEARN</Link><Link href="/contact">CONTACT</Link></nav><a className="jfc-button jfc-nav-quote" href="#quote">FREE ESTIMATE</a></div>
-    </header>
-    <main id="home-content">
+    <main id="main-content">
       <section className="jfc-hero">
         <Image className="jfc-hero-photo" src="/images/home/hero.webp" alt="Design visualization of an open Florida garage with a gray full-flake coating floor" fill priority sizes="100vw"/>
         <div className="jfc-hero-wash"/>
@@ -81,7 +61,5 @@ export function HomePage() {
       <section className="jfc-area" id="service-area"><div className="jfc-container"><p className="jfc-kicker">LOCAL FLOOR COATING SERVICES</p><h2>Jacksonville. Nocatee. Ponte Vedra. St. Johns.</h2><p>Explore floor coating options for your Northeast Florida home.</p><div>{areas.map(([name,href])=><Link href={href} key={name}>{name} <span aria-hidden="true">↗</span></Link>)}</div></div></section>
       <section className="jfc-last-cta"><div className="jfc-container"><h2>Ready to give your floor a new beginning?</h2><a className="jfc-button jfc-button-white" href="#quote">REQUEST A QUOTE →</a></div></section>
     </main>
-    <footer className="jfc-footer"><div className="jfc-container jfc-footer-grid"><div><BrandMark inverse/><p>Garage floor coatings, epoxy, polyaspartic systems and designer resin floors for Northeast Florida.</p></div><div><h3>EXPLORE</h3><Link href="/garage-floor-coatings">Garage floors</Link><Link href="/metallic-epoxy-flooring">Metallic resin</Link><Link href="/commercial-floor-coatings">Commercial coatings</Link><Link href="/learning-center">Learning Center</Link></div><div><h3>SERVICE AREAS</h3>{areas.map(([name,href])=><Link href={href} key={name}>{name}</Link>)}</div><div><h3>START A PROJECT</h3><p>Tell us about your floor and the look you have in mind.</p><a href="mailto:hello@jacksonvillefloorcoatings.com">hello@jacksonvillefloorcoatings.com</a><Link href="/contact">Request a consultation →</Link></div></div><div className="jfc-container jfc-footer-bottom"><span>© {new Date().getFullYear()} Jacksonville Floor Coatings</span><div><Link href="/privacy">Privacy</Link><a href="/sitemap.xml">Sitemap</a></div></div></footer>
-    <a className="jfc-floating-quote" href="#quote">GET A QUOTE <span aria-hidden="true">→</span></a>
   </div>;
 }

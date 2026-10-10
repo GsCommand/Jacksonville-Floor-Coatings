@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ConsultationForm } from "@/components/ConsultationForm";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
-import { SectionHeading } from "@/components/SectionHeading";
+import { PageHero, DesignCards, DesignImage, QuoteSection, GuideLinks } from "@/components/Design";
+import { navigationServices, serviceAreas } from "@/lib/design";
 
 export const metadata: Metadata = {
   title: "St. Johns Floor Coatings | Garage & Epoxy Floors",
@@ -10,23 +9,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/service-areas/st-johns-floor-coatings" },
 };
 
-export default function StJohns() {
-  return (
-    <main>
-      <section className="local-hero shell">
-        <p className="eyebrow">St. Johns, Florida</p>
-        <h1>Garage floor coatings and resin flooring for St. Johns homes.</h1>
-        <p>Jacksonville Floor Coatings serves St. Johns and nearby St. Johns County communities with full-flake garage systems, epoxy and polyaspartic options, metallic resin and light-commercial floor coatings.</p>
-        <div className="hero-actions"><Link href="/contact" className="button button-dark">Request a quote</Link><Link href="/epoxy-flooring-jacksonville" className="text-link">Compare coating systems <span>↗</span></Link></div>
-        <div className="local-page-image-grid"><ImagePlaceholder className="local-page-image-primary" /><ImagePlaceholder className="local-page-image-secondary" /></div>
-        <div className="local-cards">
-          <article className="local-card"><h2>Garage systems</h2><p>Mechanically prepared full-flake and resinous systems for two- and three-car garages, workshops and home gyms.</p></article>
-          <article className="local-card"><h2>Epoxy & polyaspartic</h2><p>System selection based on concrete condition, UV exposure, cure requirements and expected traffic.</p></article>
-          <article className="local-card"><h2>Decorative resin</h2><p>Custom metallic and seamless finishes for concrete-slab interiors and design-forward commercial spaces.</p></article>
-        </div>
-      </section>
-      <section className="section design-story"><div className="shell"><SectionHeading eyebrow="St. Johns floor coatings" title="The system should fit the slab and the way the room is used." copy="The coating name is only one part of the decision. Preparation, repairs, texture, UV exposure and cure requirements all matter." /><div className="three-grid benefit-grid"><article className="number-card"><span>01</span><h3>Inspect</h3><p>Confirm floor condition, previous coatings, cracks and use of the space.</p></article><article className="number-card"><span>02</span><h3>Prepare</h3><p>Mechanically prepare the concrete and address repairs required by the project scope.</p></article><article className="number-card"><span>03</span><h3>Protect</h3><p>Install the selected build and protective finish with a documented cure and return-to-service plan.</p></article></div></div></section>
-      <section className="section shell consultation-panel"><div><p className="eyebrow">St. Johns quote</p><h2>Tell us about the floor before choosing a product.</h2><p>Share the project type, approximate square footage, ZIP code and current floor condition to start the estimate process.</p></div><ConsultationForm compact /></section>
-    </main>
-  );
-}
+export default function LocalPage() { return <main id="main-content">
+<PageHero eyebrow="St. Johns, FLORIDA" title="Garage floor coatings and resin flooring for St. Johns homes." intro="Jacksonville Floor Coatings serves St. Johns and nearby St. Johns County communities with full-flake garage systems, epoxy and polyaspartic options, metallic resin and light-commercial floor coatings." image="/images/home/garage.webp" secondary="Garage floor systems" secondaryHref="/garage-floor-coatings"/>
+<section className="design-section shell"><div className="design-section-head"><p className="jfc-script">A floor for the way your family uses the space.</p><h2>Find the floor for your St. Johns space.</h2><p>Choose a practical garage system or a decorative interior direction, with preparation and cure requirements built into the plan.</p></div><div className="design-local-services">{navigationServices.map(service=><Link key={service.href} href={service.href}><DesignImage src={`/images/home/${service.image}.webp`} alt={`${service.title} design concept`}/><h3>{service.title}</h3><span>EXPLORE THE SERVICE →</span></Link>)}</div></section>
+<section className="design-tint"><div className="shell design-split"><div><p className="eyebrow">LOCAL CONDITIONS. A TAILORED SYSTEM.</p><h2>Start with your concrete and your everyday use.</h2><p>Two-car garages, larger storage spaces and connected interiors benefit from a finish selected around actual traffic and cleaning needs.</p><p>A new build and an existing coated garage may need different preparation scopes. Approximate square footage, slab age and a description of what is on the floor help us start the estimate.</p><Link className="text-link" href="/learning-center/florida-jacksonville">Explore Florida floor coating guides →</Link></div><DesignImage src="/images/finishes/atlantic-stone.webp" alt="Coastal Florida decorative resin interior concept"/></div></section>
+<section className="design-section shell"><div className="design-section-head"><p className="jfc-script">The details make the difference.</p><h2>Clear expectations from the beginning.</h2></div><DesignCards items={[
+{title:"Evaluate the slab",body:"Review existing paint, adhesives, cracks, contamination and moisture concerns before selecting the coating build."},
+{title:"Choose the finish",body:"Use samples to compare color and texture. Sunlight, cabinetry and room use influence the final choice."},
+{title:"Plan the installation",body:"Confirm removal, repairs, access and separate cure instructions for walking, furniture and vehicle traffic."}]}/></section>
+<section className="design-tint"><div className="shell design-split"><div><p className="jfc-script">Answers for your project.</p><h2>St. Johns floor coating questions.</h2></div><div className="design-faq"><details><summary>Can you coat a floor that already has paint or epoxy?</summary><p>The existing surface needs evaluation. Loose or unsuitable coatings may need removal before the new system is installed. That work is included in the preparation scope when required.</p></details><details><summary>Can I choose a color to match my home?</summary><p>Yes, finish direction and sample selection can be considered alongside walls, cabinets and lighting. Actual products and availability are confirmed during the consultation.</p></details><details><summary>How soon can I park or move furniture back?</summary><p>The selected products and site conditions determine the cure schedule. Installation completion does not mean the floor is ready for every type of traffic.</p></details><details><summary>Do you serve my address?</summary><p>Send your ZIP code and project location with the request so we can confirm coverage and discuss access.</p></details></div></div></section>
+<GuideLinks category="florida-jacksonville"/><section className="design-related shell"><h2>Explore our Northeast Florida service areas.</h2><div>{serviceAreas.map(([label,href])=><Link key={href} href={href}>{label} →</Link>)}</div></section><QuoteSection title="Let’s plan your St. Johns floor." copy="A new build and an existing coated garage may need different preparation scopes. Approximate square footage, slab age and a description of what is on the floor help us start the estimate."/></main>; }
