@@ -14,7 +14,7 @@ export function FlakeStrip() {
         <div><p className="eyebrow">EXPLORE THE COLORS</p><h2 id="flake-strip-title">Find your flake finish.</h2></div>
         <button type="button" aria-pressed={paused} onClick={() => setPaused(!paused)}>{paused ? "Play colors →" : "Pause colors Ⅱ"}</button>
       </div>
-      <div className="flake-strip-window">
+      <div className="shell flake-strip-window">
         <div className={`flake-strip-track${paused ? " is-paused" : ""}`}>
           {[0, 1].map(copy => (
             <div className="flake-strip-group" key={copy} aria-hidden={copy === 1 ? true : undefined}>
