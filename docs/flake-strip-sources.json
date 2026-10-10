@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Domino",
+    "code": "FB-411",
+    "image": "/images/flake/domino.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/Flake-12-in_1024x1024.webp"
+  },
+  {
+    "name": "Gravel",
+    "code": "FB-414",
+    "image": "/images/flake/gravel.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-414_GRAVEL_1.8_1024x1024.jpg"
+  },
+  {
+    "name": "Nightfall",
+    "code": "FB-715",
+    "image": "/images/flake/nightfall.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-715_NIGHTFALL_1.8_1024x1024.jpg"
+  },
+  {
+    "name": "Orbit",
+    "code": "FB-310",
+    "image": "/images/flake/orbit.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-310_ORBIT_1.8_1024x1024.jpg"
+  },
+  {
+    "name": "Tidal Wave",
+    "code": "FB-807",
+    "image": "/images/flake/tidal-wave.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-807-TIDAL-WAVE-1.4_1024x1024.jpg"
+  },
+  {
+    "name": "Shoreline",
+    "code": "FB-421",
+    "image": "/images/flake/shoreline.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-421_SHORELINE_1.8_1024x1024.jpg"
+  },
+  {
+    "name": "Creekbed",
+    "code": "FB-716",
+    "image": "/images/flake/creekbed.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-716_CREEKBED_1.8_1024x1024.webp"
+  },
+  {
+    "name": "Wombat",
+    "code": "FB-616",
+    "image": "/images/flake/wombat.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-616_WOMBAT_1.8_1024x1024.jpg"
+  },
+  {
+    "name": "Coyote",
+    "code": "FB-513",
+    "image": "/images/flake/coyote.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-513_COYOTE_1.8_1024x1024.webp"
+  },
+  {
+    "name": "Cabin Fever",
+    "code": "FB-127",
+    "image": "/images/flake/cabin-fever.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-127_CABINFEVER_1.8_1024x1024.webp"
+  },
+  {
+    "name": "Basalt",
+    "code": "F9309",
+    "image": "/images/flake/basalt.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/F9309_BASALT_1.4_1024x1024.jpg"
+  },
+  {
+    "name": "Carbon",
+    "code": "F9202",
+    "image": "/images/flake/carbon.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/F9202_CARBON_1.4_1024x1024.webp"
+  },
+  {
+    "name": "Outback",
+    "code": "FB-517",
+    "image": "/images/flake/outback.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-517_OUTBACK_1.8_1024x1024.jpg"
+  },
+  {
+    "name": "Stonewash",
+    "code": "FB-708",
+    "image": "/images/flake/stonewash.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-708-STONEWASH-1.4_1024x1024.webp"
+  },
+  {
+    "name": "Dolerite",
+    "code": "F9311",
+    "image": "/images/flake/dolerite.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/F9311_DOLERITE_1.4_1024x1024.webp"
+  },
+  {
+    "name": "Garnet",
+    "code": "F9305",
+    "image": "/images/flake/garnet.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/F9305_GARNET_1.4_1024x1024.webp"
+  },
+  {
+    "name": "Obsidian",
+    "code": "F9304",
+    "image": "/images/flake/obsidian.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/F9304_OBSIDIAN_1.4_1024x1024.jpg"
+  },
+  {
+    "name": "Stonehenge",
+    "code": "FB-427",
+    "image": "/images/flake/stonehenge.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-427-STONHENGE-1.4_1024x1024.jpg"
+  },
+  {
+    "name": "Feather Gray",
+    "code": "FB-905",
+    "image": "/images/flake/feather-gray.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-905_FEATHERGRAY_1.8_1024x1024.jpg"
+  },
+  {
+    "name": "Sand Dollar",
+    "code": "FB-951",
+    "image": "/images/flake/sand-dollar.webp",
+    "source": "https://theflakedepot.com/wp-content/uploads/2023/05/FB-951_SANDDOLLAR_1.8_1024x1024.webp"
+  }
+]
