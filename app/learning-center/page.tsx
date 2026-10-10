@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { categoryImages } from "@/lib/design";
 import { DesignImage } from "@/components/Design";
 import styles from "./learning-center.module.css";
 import {
@@ -25,6 +24,19 @@ export const metadata: Metadata = {
   },
 };
 
+const topicImages: Record<string,string> = {
+  "cost-pricing":"topic-cost", "garage-floors":"topic-garage",
+  "preparation-moisture":"topic-preparation", "problems-failures":"topic-failures",
+  "florida-jacksonville":"topic-florida", "design-maintenance":"topic-design",
+};
+const guideImages: Record<string,string> = {
+  "how-much-does-epoxy-flooring-cost-jacksonville":"guide-cost",
+  "best-garage-floor-coating-florida":"guide-best-garage",
+  "epoxy-vs-polyaspartic-garage-floor":"guide-epoxy-polyaspartic",
+  "do-you-have-to-grind-concrete-before-epoxy":"guide-grinding",
+  "moisture-testing-before-epoxy-flooring":"guide-moisture",
+  "how-to-choose-epoxy-flooring-contractor-jacksonville":"guide-contractor",
+};
 const featuredSlugs = [
   "how-much-does-epoxy-flooring-cost-jacksonville",
   "best-garage-floor-coating-florida",
@@ -93,6 +105,7 @@ export default function LearningCenterPage() {
           </div>
         </header>
 
+        <p className={styles.imageNote}>Images illustrate floor designs and planning topics; they are not completed Jacksonville Floor Coatings projects.</p>
         <section aria-labelledby="topics-heading">
           <div className={styles.featuredHead}>
             <div>
@@ -105,7 +118,7 @@ export default function LearningCenterPage() {
               const count = learningArticles.filter((article) => article.category === category.slug).length;
               return (
                 <Link className={styles.categoryCard} href={`/learning-center/${category.slug}`} key={category.slug}>
-                  <div className={styles.categoryPhoto}><Image src={categoryImages[category.slug]} alt="" fill sizes="(max-width:640px) 100vw, 33vw"/></div><span>{count} guides</span>
+                  <div className={styles.categoryPhoto}><Image src={`/images/learning/${topicImages[category.slug]}.webp`} alt="" fill sizes="(max-width:640px) 100vw, 33vw"/></div><span>{count} guides</span>
                   <h2>{category.name}</h2>
                   <p>{category.description}</p>
                   <b>Browse {category.name} →</b>
@@ -125,7 +138,7 @@ export default function LearningCenterPage() {
           <div className={styles.articleGrid}>
             {featured.map((article) => (
               <Link className={styles.articleCard} href={articlePath(article)} key={article.slug}>
-                <div className={styles.cardPhoto}><Image src={categoryImages[article.category]} alt="" fill sizes="(max-width:640px) 100vw, 50vw"/></div><small>{learningCategories.find((category) => category.slug === article.category)?.name}</small>
+                <div className={styles.cardPhoto}><Image src={`/images/learning/${guideImages[article.slug]}.webp`} alt="" fill sizes="(max-width:640px) 100vw, 50vw"/></div><small>{learningCategories.find((category) => category.slug === article.category)?.name}</small>
                 <h3>{article.title}</h3>
                 <p>{article.description}</p>
                 <span>Read guide →</span>
