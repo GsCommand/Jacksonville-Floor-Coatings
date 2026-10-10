@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 
 type Status = "idle" | "sending" | "success" | "error";
 
-export function ConsultationForm({ compact = false }: { compact?: boolean }) {
+export function ConsultationForm({ compact = false, quick = false }: { compact?: boolean; quick?: boolean }) {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
 
@@ -39,9 +39,9 @@ export function ConsultationForm({ compact = false }: { compact?: boolean }) {
         <label><span>Phone</span><input name="phone" type="tel" autoComplete="tel" required placeholder="(904) 555-0123" /></label>
         <label><span>Email</span><input name="email" type="email" autoComplete="email" placeholder="you@example.com" /></label>
         <label><span>ZIP code</span><input name="zip" inputMode="numeric" autoComplete="postal-code" placeholder="32256" /></label>
-        <label><span>Project type</span><select name="projectType" defaultValue="Garage floor coating"><option>Garage floor coating</option><option>Epoxy flooring</option><option>Polyaspartic floor coating</option><option>Metallic / decorative resin</option><option>Residential resin floor</option><option>Commercial floor coating</option><option>Not sure yet</option></select></label>
+        {!quick ? <><label><span>Project type</span><select name="projectType" defaultValue="Garage floor coating"><option>Garage floor coating</option><option>Epoxy flooring</option><option>Polyaspartic floor coating</option><option>Metallic / decorative resin</option><option>Residential resin floor</option><option>Commercial floor coating</option><option>Not sure yet</option></select></label>
         <label><span>Approx. square feet</span><input name="squareFootage" inputMode="numeric" placeholder="500" /></label>
-        <label className="form-span"><span>Tell us about the floor</span><textarea name="details" rows={compact ? 3 : 5} placeholder="Existing coating or bare concrete, cracks or damage, how the space is used, and the finish you have in mind." /></label>
+        <label className="form-span"><span>Tell us about the floor</span><textarea name="details" rows={compact ? 3 : 5} placeholder="Existing coating or bare concrete, cracks or damage, how the space is used, and the finish you have in mind." /></label></> : <input type="hidden" name="projectType" value="Garage floor coating" />}
         <label aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}><span>Company</span><input name="company" tabIndex={-1} autoComplete="off" /></label>
       </div>
       <div className="form-actions">
