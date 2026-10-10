@@ -17,5 +17,10 @@ export function QuoteSection({title="Let’s plan your floor.",copy="Tell us abo
 }
 export function GuideLinks({category}: {category:string}) {
  const guides=getCategoryArticles(category).slice(0,3);
- return <section className="design-section shell"><div className="design-section-head"><p className="jfc-script">Make an informed choice.</p><h2>Answers before the estimate.</h2><p>Practical advice from our Learning Center to help you compare the options.</p></div><div className="design-guide-grid">{guides.map(guide=><Link className="design-guide-card" href={articlePath(guide)} key={guide.slug}><div className="design-guide-photo"><Image src={categoryImages[category]} alt="" fill sizes="(max-width:800px) 100vw, 33vw"/></div><div><h3>{guide.title}</h3><p>{guide.description}</p><strong>READ THE GUIDE →</strong></div></Link>)}</div></section>;
+ const guideImages: Record<string,string> = {
+  "best-garage-floor-coating-florida":"/images/learning/guide-best-garage.webp",
+  "epoxy-vs-polyaspartic-garage-floor":"/images/learning/topic-garage.webp",
+  "full-flake-vs-solid-color-garage-floor":"/images/learning/guide-epoxy-polyaspartic.webp",
+ };
+ return <section className="design-section shell"><div className="design-section-head"><p className="jfc-script">Make an informed choice.</p><h2>Answers before the estimate.</h2><p>Practical advice from our Learning Center to help you compare the options.</p></div><div className="design-guide-grid">{guides.map(guide=><Link className="design-guide-card" href={articlePath(guide)} key={guide.slug}><div className="design-guide-photo"><Image src={guideImages[guide.slug] ?? categoryImages[category]} alt="" fill sizes="(max-width:800px) 100vw, 33vw"/></div><div><h3>{guide.title}</h3><p>{guide.description}</p><strong>READ THE GUIDE →</strong></div></Link>)}</div></section>;
 }
