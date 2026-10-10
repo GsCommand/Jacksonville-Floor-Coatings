@@ -50,6 +50,7 @@ function AreaCheck() {
 
 export function HomePage() {
   const track = useRef<HTMLDivElement>(null);
+  const serviceMenu = useRef<HTMLDetailsElement>(null);
   const [selected, setSelected] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   function move(direction: number) { const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches; track.current?.scrollBy({ left: direction * (track.current.clientWidth * 0.8), behavior: reduced ? "instant" : "smooth" }); }
@@ -57,7 +58,7 @@ export function HomePage() {
     <a className="jfc-skip" href="#home-content">Skip to content</a>
     <header className="jfc-header">
       <div className="jfc-topbar"><div className="jfc-container"><span>JACKSONVILLE & NORTHEAST FLORIDA</span><nav aria-label="Quick links"><a href="#service-area">OUR SERVICE AREA</a><a href="#quote">REQUEST A QUOTE</a></nav></div></div>
-      <div className="jfc-nav jfc-container"><BrandMark/><button className="jfc-menu-button" aria-expanded={menuOpen} aria-controls="home-navigation" onClick={()=>setMenuOpen(!menuOpen)}>{menuOpen ? "Close ✕" : "Menu ☰"}</button><nav id="home-navigation" className={menuOpen ? "is-open" : ""} aria-label="Homepage navigation" onClick={()=>setMenuOpen(false)}><Link href="/about">ABOUT US</Link><a href="#services">OUR SERVICES</a><a href="#colors">COLORS</a><a href="#service-area">WHO WE SERVE</a><Link href="/learning-center">LEARN</Link><Link href="/contact">CONTACT</Link></nav><a className="jfc-button jfc-nav-quote" href="#quote">FREE ESTIMATE</a></div>
+      <div className="jfc-nav jfc-container"><BrandMark/><button className="jfc-menu-button" aria-expanded={menuOpen} aria-controls="home-navigation" onClick={()=>{ setMenuOpen(!menuOpen); if (serviceMenu.current) serviceMenu.current.open = false; }}>{menuOpen ? "Close ✕" : "Menu ☰"}</button><nav id="home-navigation" className={menuOpen ? "is-open" : ""} aria-label="Homepage navigation" onClick={(event)=>{ if ((event.target as HTMLElement).closest("a")) { setMenuOpen(false); if (serviceMenu.current) serviceMenu.current.open = false; } }}><Link href="/about">ABOUT US</Link><details className="jfc-service-menu" ref={serviceMenu} onKeyDown={(event)=>{ if (event.key === "Escape") { event.preventDefault(); event.currentTarget.open = false; event.currentTarget.querySelector("summary")?.focus(); } }} onBlur={(event)=>{ if (!event.currentTarget.contains(event.relatedTarget as Node | null)) event.currentTarget.open = false; }}><summary>OUR SERVICES <span aria-hidden="true">⌄</span></summary><div className="jfc-service-dropdown"><p>From everyday garages to statement interiors, find a finish that fits your home or business.</p><div className="jfc-dropdown-grid">{services.map(service=><Link key={service.title} href={service.href} className="jfc-dropdown-card"><span className="jfc-dropdown-photo"><Image src={`/images/home/${service.image}.webp`} alt="" fill sizes="(max-width: 800px) 80px, 180px"/></span><span>{service.title}</span><span aria-hidden="true">→</span></Link>)}</div></div></details><a href="#colors">COLORS</a><a href="#service-area">WHO WE SERVE</a><Link href="/learning-center">LEARN</Link><Link href="/contact">CONTACT</Link></nav><a className="jfc-button jfc-nav-quote" href="#quote">FREE ESTIMATE</a></div>
     </header>
     <main id="home-content">
       <section className="jfc-hero">
