@@ -21,6 +21,8 @@ export function GuideLinks({category}: {category:string}) {
   "best-garage-floor-coating-florida":"/images/learning/guide-best-garage.webp",
   "epoxy-vs-polyaspartic-garage-floor":"/images/learning/topic-garage.webp",
   "full-flake-vs-solid-color-garage-floor":"/images/learning/guide-epoxy-polyaspartic.webp",
+  "metallic-epoxy-vs-flake-flooring":"/images/learning/guide-epoxy-polyaspartic.webp",
+  "can-metallic-epoxy-be-used-in-kitchens":"/images/learning/topic-design.webp",
  };
  return <section className="design-section shell"><div className="design-section-head"><p className="jfc-script">Make an informed choice.</p><h2>Answers before the estimate.</h2><p>Practical advice from our Learning Center to help you compare the options.</p></div><div className="design-guide-grid">{guides.map(guide=><Link className="design-guide-card" href={articlePath(guide)} key={guide.slug}><div className="design-guide-photo"><Image src={guideImages[guide.slug] ?? categoryImages[category]} alt="" fill sizes="(max-width:800px) 100vw, 33vw"/></div><div><h3>{guide.title}</h3><p>{guide.description}</p><strong>READ THE GUIDE →</strong></div></Link>)}</div></section>;
 }
