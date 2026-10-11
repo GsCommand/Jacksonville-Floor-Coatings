@@ -1,0 +1,25 @@
+{
+  "tool": "built-in imagegen",
+  "images": [
+    {
+      "name": "gray",
+      "prompt": "Use case: photorealistic-natural. Asset type: website article thumbnail, square image. Create a realistic architectural photograph of a beautiful clean two-car Florida garage with a professionally finished full-broadcast decorative vinyl flake floor. Color palette of floor: silver gray, charcoal and white. Floor occupies lower two thirds of frame, visibly dense small irregular decorative chips, glossy clear finish with controlled reflections, consistent real-world chip scale, neutral white garage walls and tidy cabinets at back, daylight. View from low doorway angle emphasizing floor finish. No people, cars, words, logos or watermarks. This is a design concept, not a documented completed project."
+    },
+    {
+      "name": "blue",
+      "prompt": "Use case: photorealistic-natural. Asset type: website article thumbnail, square image. Create a realistic architectural photograph of a beautiful clean two-car Florida garage with a professionally finished full-broadcast decorative vinyl flake floor. Color palette of floor: rich blue, navy, white and charcoal. Floor occupies lower two thirds of frame, visibly dense small irregular decorative chips, glossy clear finish with controlled reflections, consistent real-world chip scale, neutral white garage walls and tidy cabinets at back, daylight. View from low doorway angle emphasizing floor finish. No people, cars, words, logos or watermarks. This is a design concept, not a documented completed project."
+    },
+    {
+      "name": "tan",
+      "prompt": "Use case: photorealistic-natural. Asset type: website article thumbnail, square image. Create a realistic architectural photograph of a beautiful clean two-car Florida garage with a professionally finished full-broadcast decorative vinyl flake floor. Color palette of floor: warm tan, beige, cream and brown. Floor occupies lower two thirds of frame, visibly dense small irregular decorative chips, glossy clear finish with controlled reflections, consistent real-world chip scale, neutral white garage walls and tidy cabinets at back, daylight. View from low doorway angle emphasizing floor finish. No people, cars, words, logos or watermarks. This is a design concept, not a documented completed project."
+    },
+    {
+      "name": "red",
+      "prompt": "Use case: photorealistic-natural. Asset type: website article thumbnail, square image. Create a realistic architectural photograph of a beautiful clean two-car Florida garage with a professionally finished full-broadcast decorative vinyl flake floor. Color palette of floor: deep red, burgundy, charcoal and white. Floor occupies lower two thirds of frame, visibly dense small irregular decorative chips, glossy clear finish with controlled reflections, consistent real-world chip scale, neutral white garage walls and tidy cabinets at back, daylight. View from low doorway angle emphasizing floor finish. No people, cars, words, logos or watermarks. This is a design concept, not a documented completed project."
+    },
+    {
+      "name": "jax-custom",
+      "prompt": "Use case: photorealistic-natural. Asset type: website article thumbnail, square image. Create a realistic architectural photograph of a beautiful clean two-car Florida garage with a professionally finished full-broadcast decorative vinyl flake floor. Color palette of floor: Jacksonville Jaguars-inspired teal, black and gold with subtle white accents, no logos. Floor occupies lower two thirds of frame, visibly dense small irregular decorative chips, glossy clear finish with controlled reflections, consistent real-world chip scale, neutral white garage walls and tidy cabinets at back, daylight. View from low doorway angle emphasizing floor finish. No people, cars, words, logos or watermarks. This is a design concept, not a documented completed project."
+    }
+  ]
+}
