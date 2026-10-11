@@ -1,0 +1,1916 @@
+[
+  {
+    "name": "Thyme",
+    "code": "FB-977",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-977-thyme.webp"
+  },
+  {
+    "name": "Polar",
+    "code": "FB-330",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-330-polar.webp"
+  },
+  {
+    "name": "Orbit",
+    "code": "FB-310",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-310-orbit.webp"
+  },
+  {
+    "name": "Rapids",
+    "code": "FB-506",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-506-rapids.webp"
+  },
+  {
+    "name": "Water Lily",
+    "code": "FB-921",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-921-water-lily.webp"
+  },
+  {
+    "name": "Current",
+    "code": "FB-929",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-929-current.webp"
+  },
+  {
+    "name": "Sedum",
+    "code": "FB-931",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-931-sedum.webp"
+  },
+  {
+    "name": "Comet",
+    "code": "FB-711",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-711-comet.webp"
+  },
+  {
+    "name": "Frostbite",
+    "code": "FB-930",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-930-frostbite.webp"
+  },
+  {
+    "name": "Black Ice",
+    "code": "FB-934",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-934-black-ice.webp"
+  },
+  {
+    "name": "Lapis",
+    "code": "FB-943",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-943-lapis.webp"
+  },
+  {
+    "name": "Rainstorm",
+    "code": "FB-944",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-944-rainstorm.webp"
+  },
+  {
+    "name": "Kismet",
+    "code": "FB-945",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-945-kismet.webp"
+  },
+  {
+    "name": "Voltage",
+    "code": "FB-946",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-946-voltage.webp"
+  },
+  {
+    "name": "Tidal Wave",
+    "code": "FB-807",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-807-tidal-wave.webp"
+  },
+  {
+    "name": "Nimbus",
+    "code": "FB-922",
+    "series": "Flake Flooring Cool Series",
+    "image": "/images/flake-gallery/xps-FB-922-nimbus.webp"
+  },
+  {
+    "name": "Gracious",
+    "code": "FB-916",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-916-gracious.webp"
+  },
+  {
+    "name": "Stony Creek",
+    "code": "FB-806",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-806-stony-creek.webp"
+  },
+  {
+    "name": "Galaxy",
+    "code": "FB-907",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-907-galaxy.webp"
+  },
+  {
+    "name": "Stargazer",
+    "code": "FB-908",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-908-stargazer.webp"
+  },
+  {
+    "name": "Timberwolf",
+    "code": "FB-909",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-909-timberwolf.webp"
+  },
+  {
+    "name": "Houndstooth",
+    "code": "FB-910",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-910-houndstooth.webp"
+  },
+  {
+    "name": "Thunder",
+    "code": "FB-912",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-912-thunder.webp"
+  },
+  {
+    "name": "Shadow",
+    "code": "FB-913",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-913-shadow.webp"
+  },
+  {
+    "name": "Crossbow",
+    "code": "FB-320",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-320-crossbow.webp"
+  },
+  {
+    "name": "Domino",
+    "code": "FB-411",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-411-domino.webp"
+  },
+  {
+    "name": "Gravel",
+    "code": "FB-414",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-414-gravel.webp"
+  },
+  {
+    "name": "Stonehenge",
+    "code": "FB-427",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-427-stonehenge.webp"
+  },
+  {
+    "name": "Anvil",
+    "code": "FB-726",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-726-anvil.webp"
+  },
+  {
+    "name": "Wombat",
+    "code": "FB-616",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-616-wombat.webp"
+  },
+  {
+    "name": "Nightfall",
+    "code": "FB-715",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-715-nightfall.webp"
+  },
+  {
+    "name": "Koala",
+    "code": "FB-811",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-811-koala.webp"
+  },
+  {
+    "name": "Gargoyle",
+    "code": "FB-914",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-914-gargoyle.webp"
+  },
+  {
+    "name": "Raven",
+    "code": "FB-915",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-915-raven.webp"
+  },
+  {
+    "name": "Osprey",
+    "code": "FB-724",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-724-osprey.webp"
+  },
+  {
+    "name": "Full Moon",
+    "code": "FB-917",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-917-full-moon.webp"
+  },
+  {
+    "name": "Celestial",
+    "code": "FB-926",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-926-celestial.webp"
+  },
+  {
+    "name": "Coyote",
+    "code": "FB-513",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-513-coyote.webp"
+  },
+  {
+    "name": "Reed",
+    "code": "FB-507",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-507-reed.webp"
+  },
+  {
+    "name": "Nordic Green",
+    "code": "FB-514",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-514-nordic-green.webp"
+  },
+  {
+    "name": "Rocky Ridge",
+    "code": "FB-801",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-801-rocky-ridge.webp"
+  },
+  {
+    "name": "Snowfall",
+    "code": "FB-602",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-602-snowfall.webp"
+  },
+  {
+    "name": "Opal",
+    "code": "FB-901",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-901-opal.webp"
+  },
+  {
+    "name": "Feather Gray",
+    "code": "FB-905",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-905-feather-gray.webp"
+  },
+  {
+    "name": "Wild Dove",
+    "code": "FB-911",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-911-wild-dove.webp"
+  },
+  {
+    "name": "Cabin Fever",
+    "code": "FB-127",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-127-cabin-fever.webp"
+  },
+  {
+    "name": "Birch Bark",
+    "code": "FB-1005",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-1005-birch-bark.webp"
+  },
+  {
+    "name": "Submarine",
+    "code": "FB-608",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-608-submarine.webp"
+  },
+  {
+    "name": "Arctic",
+    "code": "FB-704",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-704-arctic.webp"
+  },
+  {
+    "name": "Summit",
+    "code": "FB-721",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-721-summit.webp"
+  },
+  {
+    "name": "Avalanche",
+    "code": "FB-722",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-722-avalanche.webp"
+  },
+  {
+    "name": "Sea Mist",
+    "code": "FB-802",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-802-sea-mist.webp"
+  },
+  {
+    "name": "Sea Crest",
+    "code": "FB-803",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-803-sea-crest.webp"
+  },
+  {
+    "name": "Siberian",
+    "code": "FB-902",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-902-siberian.webp"
+  },
+  {
+    "name": "Silver Bells",
+    "code": "FB-903",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-903-silver-bells.webp"
+  },
+  {
+    "name": "Lunar",
+    "code": "FB-904",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-904-lunar.webp"
+  },
+  {
+    "name": "Suave",
+    "code": "FB-920",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-920-suave.webp"
+  },
+  {
+    "name": "Sprout",
+    "code": "FB-938",
+    "series": "Cool Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-938-sprout.webp"
+  },
+  {
+    "name": "Dingo",
+    "code": "FB-980",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-980-dingo.webp"
+  },
+  {
+    "name": "Outback",
+    "code": "FB-517",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-517-outback.webp"
+  },
+  {
+    "name": "Waxwing",
+    "code": "FB-968",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-968-waxwing.webp"
+  },
+  {
+    "name": "Buffalo",
+    "code": "FB-954",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-954-buffalo.webp"
+  },
+  {
+    "name": "Bambi",
+    "code": "FB-959",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-959-bambi.webp"
+  },
+  {
+    "name": "Rosy-Finch",
+    "code": "FB-969",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-969-rosy-finch.webp"
+  },
+  {
+    "name": "Wren",
+    "code": "FB-970",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-970-wren.webp"
+  },
+  {
+    "name": "Robin",
+    "code": "FB-973",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-973-robin.webp"
+  },
+  {
+    "name": "Magma",
+    "code": "FB-932",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-932-magma.webp"
+  },
+  {
+    "name": "Sparrow",
+    "code": "FB-972",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-972-sparrow.webp"
+  },
+  {
+    "name": "Quail",
+    "code": "FB-974",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-974-quail.webp"
+  },
+  {
+    "name": "Woodpecker",
+    "code": "FB-975",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-975-woodpecker.webp"
+  },
+  {
+    "name": "Fig",
+    "code": "FB-948",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-948-fig.webp"
+  },
+  {
+    "name": "Shoreline",
+    "code": "FB-421",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-421-shoreline.webp"
+  },
+  {
+    "name": "Cannoli",
+    "code": "FB-130",
+    "series": "Warm Series",
+    "image": "/images/flake-gallery/xps-FB-130-cannoli.webp"
+  },
+  {
+    "name": "Loon",
+    "code": "FB-966",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-966-loon.webp"
+  },
+  {
+    "name": "Mushroom",
+    "code": "FB-714",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-714-mushroom.webp"
+  },
+  {
+    "name": "Dovetail",
+    "code": "FB-823",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-823-dovetail.webp"
+  },
+  {
+    "name": "Morel",
+    "code": "FB-979",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-979-morel.webp"
+  },
+  {
+    "name": "Chenille",
+    "code": "FB-981",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-981-chenille.webp"
+  },
+  {
+    "name": "Safari",
+    "code": "FB-504",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-504-safari.webp"
+  },
+  {
+    "name": "Woodland",
+    "code": "FB-516",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-516-woodland.webp"
+  },
+  {
+    "name": "Keystone",
+    "code": "FB-713",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-713-keystone.webp"
+  },
+  {
+    "name": "Chickadee",
+    "code": "FB-967",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-967-chickadee.webp"
+  },
+  {
+    "name": "Oasis",
+    "code": "FB-712",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-712-oasis.webp"
+  },
+  {
+    "name": "Magnolia",
+    "code": "FB-942",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-942-magnolia.webp"
+  },
+  {
+    "name": "Heron",
+    "code": "FB-976",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-976-heron.webp"
+  },
+  {
+    "name": "Stonewash",
+    "code": "FB-708",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-708-stonewash.webp"
+  },
+  {
+    "name": "Merino",
+    "code": "FB-971",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-971-merino.webp"
+  },
+  {
+    "name": "Burrow",
+    "code": "FB-723",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-723-burrow.webp"
+  },
+  {
+    "name": "Brickyard",
+    "code": "FB-725",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-725-brickyard.webp"
+  },
+  {
+    "name": "Creekbed",
+    "code": "FB-716",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-716-creekbed.webp"
+  },
+  {
+    "name": "Madras",
+    "code": "FB-706",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-706-madras.webp"
+  },
+  {
+    "name": "Citrine",
+    "code": "FB-978",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-978-citrine.webp"
+  },
+  {
+    "name": "Moon Mist",
+    "code": "FB-906",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-906-moon-mist.webp"
+  },
+  {
+    "name": "Quicksilver",
+    "code": "FB-424",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-424-quicksilver.webp"
+  },
+  {
+    "name": "Swan",
+    "code": "FB-612",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-612-swan.webp"
+  },
+  {
+    "name": "Trailmix",
+    "code": "FB-613",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-613-trailmix.webp"
+  },
+  {
+    "name": "Stinger",
+    "code": "FB-508",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-508-stinger.webp"
+  },
+  {
+    "name": "Prairie",
+    "code": "FB-509",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-509-prairie.webp"
+  },
+  {
+    "name": "Morning Dew",
+    "code": "FB-609",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-609-morning-dew.webp"
+  },
+  {
+    "name": "Steelcut",
+    "code": "FB-720",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-720-steelcut.webp"
+  },
+  {
+    "name": "Colonial",
+    "code": "FB-817",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-817-colonial.webp"
+  },
+  {
+    "name": "Victorian",
+    "code": "FB-818",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-818-victorian.webp"
+  },
+  {
+    "name": "Woven",
+    "code": "FB-919",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-919-woven.webp"
+  },
+  {
+    "name": "Aviator",
+    "code": "FB-928",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-928-aviator.webp"
+  },
+  {
+    "name": "Slalom",
+    "code": "FB-937",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-937-slalom.webp"
+  },
+  {
+    "name": "Bramble",
+    "code": "FB-941",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-941-bramble.webp"
+  },
+  {
+    "name": "Sand Dollar",
+    "code": "FB-951",
+    "series": "Warm Neutral Series",
+    "image": "/images/flake-gallery/xps-FB-951-sand-dollar.webp"
+  },
+  {
+    "name": "LANAI GRAY",
+    "code": "F3080",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F3080-lanai-gray.webp"
+  },
+  {
+    "name": "BLIZZARD",
+    "code": "FB-6001",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-FB-6001-blizzard.webp"
+  },
+  {
+    "name": "SYCAMORE",
+    "code": "FB-6002",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-FB-6002-sycamore.webp"
+  },
+  {
+    "name": "WEATHERED GREY",
+    "code": "FB-6003",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-FB-6003-weathered-grey.webp"
+  },
+  {
+    "name": "CARBON",
+    "code": "F9202",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9202-carbon.webp"
+  },
+  {
+    "name": "FELDSPAR",
+    "code": "F9203",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9203-feldspar.webp"
+  },
+  {
+    "name": "SABLE",
+    "code": "F9205",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9205-sable.webp"
+  },
+  {
+    "name": "Pumice",
+    "code": "F9303",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9303-pumice.webp"
+  },
+  {
+    "name": "OBSIDIAN",
+    "code": "F9304",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9304-obsidian.webp"
+  },
+  {
+    "name": "GARNET",
+    "code": "F9305",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9305-garnet.webp"
+  },
+  {
+    "name": "Schist",
+    "code": "F9307",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9307-schist.webp"
+  },
+  {
+    "name": "Basalt",
+    "code": "F9309",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9309-basalt.webp"
+  },
+  {
+    "name": "DOLERITE",
+    "code": "F9311",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9311-dolerite.webp"
+  },
+  {
+    "name": "SPILITE",
+    "code": "F9313",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9313-spilite.webp"
+  },
+  {
+    "name": "METAPELITE",
+    "code": "F9317",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9317-metapelite.webp"
+  },
+  {
+    "name": "ARKOSE",
+    "code": "F9318",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9318-arkose.webp"
+  },
+  {
+    "name": "TALUS",
+    "code": "F9319",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9319-talus.webp"
+  },
+  {
+    "name": "SOAPSTONE",
+    "code": "F9320",
+    "series": "Marble Series",
+    "image": "/images/flake-gallery/xps-F9320-soapstone.webp"
+  },
+  {
+    "name": "Almond",
+    "code": "FB-605",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-605-almond.webp"
+  },
+  {
+    "name": "Alpine",
+    "code": "FB-103",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-103-alpine.webp"
+  },
+  {
+    "name": "Appalachian",
+    "code": "FB-812",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-812-appalachian.webp"
+  },
+  {
+    "name": "Argyle",
+    "code": "FB-303",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-303-argyle.webp"
+  },
+  {
+    "name": "Baboon",
+    "code": "FB-964",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-964-baboon.webp"
+  },
+  {
+    "name": "Bandit",
+    "code": "FB-126",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-126-bandit.webp"
+  },
+  {
+    "name": "Barn Owl",
+    "code": "FB-1004",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-1004-barn-owl.webp"
+  },
+  {
+    "name": "Barrel",
+    "code": "FB-110",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-110-barrel.webp"
+  },
+  {
+    "name": "Basil",
+    "code": "FB-418",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-418-basil.webp"
+  },
+  {
+    "name": "Basset",
+    "code": "FB-105",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-105-basset.webp"
+  },
+  {
+    "name": "Beachcomber",
+    "code": "FB-603",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-603-beachcomber.webp"
+  },
+  {
+    "name": "Beast",
+    "code": "FB-955",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-955-beast.webp"
+  },
+  {
+    "name": "Belle",
+    "code": "FB-124",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-124-belle.webp"
+  },
+  {
+    "name": "Birthday Cake",
+    "code": "FB-816",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-816-birthday-cake.webp"
+  },
+  {
+    "name": "Blue Heron",
+    "code": "FB-1006",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-1006-blue-heron.webp"
+  },
+  {
+    "name": "Blue Lagoon",
+    "code": "FB-819",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-819-blue-lagoon.webp"
+  },
+  {
+    "name": "Blue Wing",
+    "code": "FB-116",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-116-blue-wing.webp"
+  },
+  {
+    "name": "Brookside",
+    "code": "FB-117",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-117-brookside.webp"
+  },
+  {
+    "name": "Brown Sugar",
+    "code": "FB-961",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-961-brown-sugar.webp"
+  },
+  {
+    "name": "Buckskin",
+    "code": "FB-614",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-614-buckskin.webp"
+  },
+  {
+    "name": "Burlap",
+    "code": "FB-417",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-417-burlap.webp"
+  },
+  {
+    "name": "Burlwood",
+    "code": "FB-305",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-305-burlwood.webp"
+  },
+  {
+    "name": "Camel",
+    "code": "FB-413",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-413-camel.webp"
+  },
+  {
+    "name": "Caribou",
+    "code": "FB-104",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-104-caribou.webp"
+  },
+  {
+    "name": "Cashmere",
+    "code": "FB-129",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-129-cashmere.webp"
+  },
+  {
+    "name": "Cato",
+    "code": "FB-121",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-121-cato.webp"
+  },
+  {
+    "name": "Cedar",
+    "code": "FB-815",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-815-cedar.webp"
+  },
+  {
+    "name": "Chameleon",
+    "code": "FB-309",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-309-chameleon.webp"
+  },
+  {
+    "name": "Chestnut",
+    "code": "FB-822",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-822-chestnut.webp"
+  },
+  {
+    "name": "Clover",
+    "code": "FB-808",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-808-clover.webp"
+  },
+  {
+    "name": "Cobblestone",
+    "code": "FB-422",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-422-cobblestone.webp"
+  },
+  {
+    "name": "Crimson",
+    "code": "FB-123",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-123-crimson.webp"
+  },
+  {
+    "name": "Cruller",
+    "code": "FB-820",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-820-cruller.webp"
+  },
+  {
+    "name": "Dahlia",
+    "code": "FB-308",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-308-dahlia.webp"
+  },
+  {
+    "name": "Dakota Trail",
+    "code": "FB-607",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-607-dakota-trail.webp"
+  },
+  {
+    "name": "Danish",
+    "code": "FB-118",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-118-danish.webp"
+  },
+  {
+    "name": "Dory",
+    "code": "FB-307",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-307-dory.webp"
+  },
+  {
+    "name": "\u00c9clair",
+    "code": "FB-326",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-326-clair.webp"
+  },
+  {
+    "name": "Fern",
+    "code": "FB-102",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-102-fern.webp"
+  },
+  {
+    "name": "Finch",
+    "code": "FB-106",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-106-finch.webp"
+  },
+  {
+    "name": "Fireside",
+    "code": "FB-604",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-604-fireside.webp"
+  },
+  {
+    "name": "Fox",
+    "code": "FB-120",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-120-fox.webp"
+  },
+  {
+    "name": "Fritter",
+    "code": "FB-101",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-101-fritter.webp"
+  },
+  {
+    "name": "Gale",
+    "code": "FB-301",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-301-gale.webp"
+  },
+  {
+    "name": "Grasshopper",
+    "code": "FB-813",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-813-grasshopper.webp"
+  },
+  {
+    "name": "Green Bay",
+    "code": "FB-426",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-426-green-bay.webp"
+  },
+  {
+    "name": "Grizzly",
+    "code": "FB-965",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-965-grizzly.webp"
+  },
+  {
+    "name": "Harvest",
+    "code": "FB-412",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-412-harvest.webp"
+  },
+  {
+    "name": "Hillside",
+    "code": "FB-701",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-701-hillside.webp"
+  },
+  {
+    "name": "Himalayan",
+    "code": "FB-705",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-705-himalayan.webp"
+  },
+  {
+    "name": "Honeycomb",
+    "code": "FB-957",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-957-honeycomb.webp"
+  },
+  {
+    "name": "Huckleberry",
+    "code": "FB-311",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-311-huckleberry.webp"
+  },
+  {
+    "name": "Ice Blue",
+    "code": "FB-425",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-425-ice-blue.webp"
+  },
+  {
+    "name": "Imperial",
+    "code": "FB-329",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-329-imperial.webp"
+  },
+  {
+    "name": "Iris",
+    "code": "FB-316",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-316-iris.webp"
+  },
+  {
+    "name": "Kalahari",
+    "code": "FB-519",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-519-kalahari.webp"
+  },
+  {
+    "name": "Kennedy",
+    "code": "FB-115",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-115-kennedy.webp"
+  },
+  {
+    "name": "Khaki",
+    "code": "FB-428",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-428-khaki.webp"
+  },
+  {
+    "name": "Kringle",
+    "code": "FB-515",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-515-kringle.webp"
+  },
+  {
+    "name": "Leopard",
+    "code": "FB-518",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-518-leopard.webp"
+  },
+  {
+    "name": "Lighthouse",
+    "code": "FB-302",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-302-lighthouse.webp"
+  },
+  {
+    "name": "Linden",
+    "code": "FB-963",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-963-linden.webp"
+  },
+  {
+    "name": "Maple Grove",
+    "code": "FB-323",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-323-maple-grove.webp"
+  },
+  {
+    "name": "Mardi Gras",
+    "code": "FB-317",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-317-mardi-gras.webp"
+  },
+  {
+    "name": "Matador",
+    "code": "FB-505",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-505-matador.webp"
+  },
+  {
+    "name": "Merlot",
+    "code": "FB-416",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-416-merlot.webp"
+  },
+  {
+    "name": "Midnight",
+    "code": "FB-423",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-423-midnight.webp"
+  },
+  {
+    "name": "Mink",
+    "code": "FB-109",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-109-mink.webp"
+  },
+  {
+    "name": "Mojito",
+    "code": "FB-958",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-958-mojito.webp"
+  },
+  {
+    "name": "Monroe",
+    "code": "FB-107",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-107-monroe.webp"
+  },
+  {
+    "name": "Monterrey",
+    "code": "FB-809",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-809-monterrey.webp"
+  },
+  {
+    "name": "Morocco",
+    "code": "FB-810",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-810-morocco.webp"
+  },
+  {
+    "name": "Moth",
+    "code": "FB-1001",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-1001-moth.webp"
+  },
+  {
+    "name": "Mountain Green",
+    "code": "FB-322",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-322-mountain-green.webp"
+  },
+  {
+    "name": "Mudslide",
+    "code": "FB-108",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-108-mudslide.webp"
+  },
+  {
+    "name": "Olivine",
+    "code": "FB-710",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-710-olivine.webp"
+  },
+  {
+    "name": "Oregano",
+    "code": "FB-111",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-111-oregano.webp"
+  },
+  {
+    "name": "Palomino",
+    "code": "FB-804",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-804-palomino.webp"
+  },
+  {
+    "name": "Papillion",
+    "code": "FB-119",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-119-papillion.webp"
+  },
+  {
+    "name": "Pecan",
+    "code": "FB-125",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-125-pecan.webp"
+  },
+  {
+    "name": "Pembrook",
+    "code": "FB-114",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-114-pembrook.webp"
+  },
+  {
+    "name": "Persian",
+    "code": "FB-952",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-952-persian.webp"
+  },
+  {
+    "name": "Pheasant",
+    "code": "FB-318",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-318-pheasant.webp"
+  },
+  {
+    "name": "Pintail",
+    "code": "FB-324",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-324-pintail.webp"
+  },
+  {
+    "name": "Portico",
+    "code": "FB-707",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-707-portico.webp"
+  },
+  {
+    "name": "Portobello",
+    "code": "FB-512",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-512-portobello.webp"
+  },
+  {
+    "name": "Primrose",
+    "code": "FB-128",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-128-primrose.webp"
+  },
+  {
+    "name": "Rescue Ranger",
+    "code": "FB-122",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-122-rescue-ranger.webp"
+  },
+  {
+    "name": "River Rock",
+    "code": "FB-1002",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-1002-river-rock.webp"
+  },
+  {
+    "name": "Savannah",
+    "code": "FB-814",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-814-savannah.webp"
+  },
+  {
+    "name": "Scarecrow",
+    "code": "FB-615",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-615-scarecrow.webp"
+  },
+  {
+    "name": "Seaport",
+    "code": "FB-709",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-709-seaport.webp"
+  },
+  {
+    "name": "Setter",
+    "code": "FB-953",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-953-setter.webp"
+  },
+  {
+    "name": "Sierra",
+    "code": "FB-321",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-321-sierra.webp"
+  },
+  {
+    "name": "Smokehouse",
+    "code": "FB-306",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-306-smokehouse.webp"
+  },
+  {
+    "name": "Smokey Blue",
+    "code": "FB-933",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-933-smokey-blue.webp"
+  },
+  {
+    "name": "Space Odyssey",
+    "code": "FB-312",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-312-space-odyssey.webp"
+  },
+  {
+    "name": "Spice",
+    "code": "FB-610",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-610-spice.webp"
+  },
+  {
+    "name": "Strudel",
+    "code": "FB-502",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-502-strudel.webp"
+  },
+  {
+    "name": "Sunset Beige",
+    "code": "FB-112",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-112-sunset-beige.webp"
+  },
+  {
+    "name": "Terrier",
+    "code": "FB-325",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-325-terrier.webp"
+  },
+  {
+    "name": "Thistle",
+    "code": "FB-510",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-510-thistle.webp"
+  },
+  {
+    "name": "Twine",
+    "code": "FB-956",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-956-twine.webp"
+  },
+  {
+    "name": "Welsch",
+    "code": "FB-805",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-805-welsch.webp"
+  },
+  {
+    "name": "Willow",
+    "code": "FB-511",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-511-willow.webp"
+  },
+  {
+    "name": "Winter Wren",
+    "code": "FB-1003",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-1003-winter-wren.webp"
+  },
+  {
+    "name": "Yorkshire",
+    "code": "FB-501",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-501-yorkshire.webp"
+  },
+  {
+    "name": "LAMBEAU",
+    "code": "FB-201",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-201-lambeau.webp"
+  },
+  {
+    "name": "SOLDIER",
+    "code": "FB-202",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-202-soldier.webp"
+  },
+  {
+    "name": "SUN LIFE",
+    "code": "FB-203",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-203-sun-life.webp"
+  },
+  {
+    "name": "PAUL BROWN",
+    "code": "FB-204",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-204-paul-brown.webp"
+  },
+  {
+    "name": "CLEVELAND CHOMPS",
+    "code": "FB-205",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-205-cleveland-chomps.webp"
+  },
+  {
+    "name": "CAM",
+    "code": "FB-206",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-206-cam.webp"
+  },
+  {
+    "name": "LP FIELD",
+    "code": "FB-207",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-207-lp-field.webp"
+  },
+  {
+    "name": "MILLER",
+    "code": "FB-208",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-208-miller.webp"
+  },
+  {
+    "name": "HEINZ",
+    "code": "FB-209",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-209-heinz.webp"
+  },
+  {
+    "name": "RAM",
+    "code": "FB-210",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-210-ram.webp"
+  },
+  {
+    "name": "SUPERDOME",
+    "code": "FB-211",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-211-superdome.webp"
+  },
+  {
+    "name": "DOAK",
+    "code": "FB-212",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-212-doak.webp"
+  },
+  {
+    "name": "FORD",
+    "code": "FB-213",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-213-ford.webp"
+  },
+  {
+    "name": "MADDEN",
+    "code": "FB-214",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-214-madden.webp"
+  },
+  {
+    "name": "METRODOME",
+    "code": "FB-215",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-215-metrodome.webp"
+  },
+  {
+    "name": "COLISEUM",
+    "code": "FB-216",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-216-coliseum.webp"
+  },
+  {
+    "name": "LUCAS",
+    "code": "FB-218",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-218-lucas.webp"
+  },
+  {
+    "name": "SPANGLE",
+    "code": "FB-219",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-219-spangle.webp"
+  },
+  {
+    "name": "DAREDEVIL",
+    "code": "FB-220",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-220-daredevil.webp"
+  },
+  {
+    "name": "BRIAR",
+    "code": "FB-221",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-221-briar.webp"
+  },
+  {
+    "name": "RELIANT",
+    "code": "FB-222",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-222-reliant.webp"
+  },
+  {
+    "name": "BUCKY",
+    "code": "FB-223",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-223-bucky.webp"
+  },
+  {
+    "name": "MONTANA",
+    "code": "FB-224",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-224-montana.webp"
+  },
+  {
+    "name": "HUMPHREY",
+    "code": "FB-225",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-225-humphrey.webp"
+  },
+  {
+    "name": "EVERBANK",
+    "code": "FB-226",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-226-everbank.webp"
+  },
+  {
+    "name": "CAREY",
+    "code": "FB-228",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-228-carey.webp"
+  },
+  {
+    "name": "WASHINGTON",
+    "code": "FB-228",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-228-washington.webp"
+  },
+  {
+    "name": "LINCOLN",
+    "code": "FB-229",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-229-lincoln.webp"
+  },
+  {
+    "name": "CARDINAL",
+    "code": "FB-230",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-230-cardinal.webp"
+  },
+  {
+    "name": "MILWAUKEE",
+    "code": "FB-231",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-231-milwaukee.webp"
+  },
+  {
+    "name": "WINDY CITY",
+    "code": "FB-232",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-232-windy-city.webp"
+  },
+  {
+    "name": "THE LAND",
+    "code": "FB-233",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-233-the-land.webp"
+  },
+  {
+    "name": "JAX",
+    "code": "FB-234",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-234-jax.webp"
+  },
+  {
+    "name": "RAMPAGE",
+    "code": "FB-235",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-235-rampage.webp"
+  },
+  {
+    "name": "FLIPPER",
+    "code": "FB-236",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-236-flipper.webp"
+  },
+  {
+    "name": "SPLASH",
+    "code": "FB-237",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-237-splash.webp"
+  },
+  {
+    "name": "GUMBO",
+    "code": "FB-238",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-238-gumbo.webp"
+  },
+  {
+    "name": "SWOOP",
+    "code": "FB-239",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-239-swoop.webp"
+  },
+  {
+    "name": "STEEL CITY",
+    "code": "FB-240",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-240-steel-city.webp"
+  },
+  {
+    "name": "BLITZ",
+    "code": "FB-241",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-241-blitz.webp"
+  },
+  {
+    "name": "BOOM",
+    "code": "FB-242",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-242-boom.webp"
+  },
+  {
+    "name": "VIKTOR",
+    "code": "FB-243",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-243-viktor.webp"
+  },
+  {
+    "name": "SKOL",
+    "code": "FB-244",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-244-skol.webp"
+  },
+  {
+    "name": "POE",
+    "code": "FB-245",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-245-poe.webp"
+  },
+  {
+    "name": "CONQUER",
+    "code": "FB-246",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-246-conquer.webp"
+  },
+  {
+    "name": "RISE",
+    "code": "FB-247",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-247-rise.webp"
+  },
+  {
+    "name": "CHARLOTTE",
+    "code": "FB-248",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-248-charlotte.webp"
+  },
+  {
+    "name": "ROWDY",
+    "code": "FB-249",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-249-rowdy.webp"
+  },
+  {
+    "name": "PAT",
+    "code": "FB-250",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-250-pat.webp"
+  },
+  {
+    "name": "REBEL",
+    "code": "FB-251",
+    "series": "SPORTS / INSIGNIA COLLECTION",
+    "image": "/images/flake-gallery/xps-FB-251-rebel.webp"
+  },
+  {
+    "name": "Midcentury",
+    "code": "UVFB-1002",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1002-midcentury.webp"
+  },
+  {
+    "name": "Townhome",
+    "code": "UVFB-1003",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1003-townhome.webp"
+  },
+  {
+    "name": "Chalet",
+    "code": "UVFB-1007",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1007-chalet.webp"
+  },
+  {
+    "name": "Saltbox",
+    "code": "UVFB-1008",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1008-saltbox.webp"
+  },
+  {
+    "name": "Homestead",
+    "code": "UVFB-1009",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1009-homestead.webp"
+  },
+  {
+    "name": "Bungalow",
+    "code": "UVFB-1010",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1010-bungalow.webp"
+  },
+  {
+    "name": "Beach House",
+    "code": "UVFB-1021",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1021-beach-house.webp"
+  },
+  {
+    "name": "Loft",
+    "code": "UVFB-1022",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1022-loft.webp"
+  },
+  {
+    "name": "Manor",
+    "code": "UVFB-1023",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1023-manor.webp"
+  },
+  {
+    "name": "Ironwork",
+    "code": "UVFB-1024",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1024-ironwork.webp"
+  },
+  {
+    "name": "Rooftop",
+    "code": "UVFB-1025",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1025-rooftop.webp"
+  },
+  {
+    "name": "Rowhouse",
+    "code": "UVFB-1026",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1026-rowhouse.webp"
+  },
+  {
+    "name": "Courtyard",
+    "code": "UVFB-1028",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1028-courtyard.webp"
+  },
+  {
+    "name": "Terrace",
+    "code": "UVFB-1029",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1029-terrace.webp"
+  },
+  {
+    "name": "Castle",
+    "code": "UVFB-1030",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1030-castle.webp"
+  },
+  {
+    "name": "Brownstone",
+    "code": "UVFB-1020",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1020-brownstone.webp"
+  },
+  {
+    "name": "Bower",
+    "code": "UVFB-1019",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1019-bower.webp"
+  },
+  {
+    "name": "Veranda",
+    "code": "UVFB-1027",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1027-veranda.webp"
+  },
+  {
+    "name": "Pueblo",
+    "code": "UVFB-1001",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1001-pueblo.webp"
+  },
+  {
+    "name": "Chateau",
+    "code": "UVFB-1004",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1004-chateau.webp"
+  },
+  {
+    "name": "Villa",
+    "code": "UVFB-1005",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1005-villa.webp"
+  },
+  {
+    "name": "Cottage",
+    "code": "UVFB-1006",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1006-cottage.webp"
+  },
+  {
+    "name": "Ranch",
+    "code": "UVFB-1011",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1011-ranch.webp"
+  },
+  {
+    "name": "Tudor",
+    "code": "UVFB-1012",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-1012-tudor.webp"
+  },
+  {
+    "name": "Canopy",
+    "code": "UVFB-2001",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2001-canopy.webp"
+  },
+  {
+    "name": "Woodshed",
+    "code": "UVFB-2002",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2002-woodshed.webp"
+  },
+  {
+    "name": "Coach House",
+    "code": "UVFB-2003",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2003-coach-house.webp"
+  },
+  {
+    "name": "Pergola",
+    "code": "UVFB-2004",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2004-pergola.webp"
+  },
+  {
+    "name": "Gazebo",
+    "code": "UVFB-2005",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2005-gazebo.webp"
+  },
+  {
+    "name": "Lodge",
+    "code": "UVFB-2006",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2006-lodge.webp"
+  },
+  {
+    "name": "Sunroom",
+    "code": "UVFB-2007",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2007-sunroom.webp"
+  },
+  {
+    "name": "Croft",
+    "code": "UVFB-2008",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2008-croft.webp"
+  },
+  {
+    "name": "Atrium",
+    "code": "UVFB-2009",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2009-atrium.webp"
+  },
+  {
+    "name": "Arbor",
+    "code": "UVFB-2010",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2010-arbor.webp"
+  },
+  {
+    "name": "Patio",
+    "code": "UVFB-2011",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2011-patio.webp"
+  },
+  {
+    "name": "Igloo",
+    "code": "UVFB-2012",
+    "series": "UV+ Collection",
+    "image": "/images/flake-gallery/xps-UVFB-2012-igloo.webp"
+  },
+  {
+    "name": "River Rock",
+    "code": "FB-1002",
+    "series": "MISC Series",
+    "image": "/images/flake-gallery/xps-FB-1002-river-rock.webp"
+  }
+]

@@ -9,7 +9,7 @@ export function Header() {
  const home = usePathname() === "/";
  const areaHref = home ? "#service-area" : "/#service-area";
  const quoteHref = home ? "#quote" : "/contact";
- const colorsHref = home ? "#colors" : "/finishes";
+ const colorsHref = "/finishes";
  const [menuOpen,setMenuOpen] = useState(false);
  const serviceMenu = useRef<HTMLDetailsElement>(null);
  return <> <a className="jfc-skip" href="#main-content">Skip to content</a>
