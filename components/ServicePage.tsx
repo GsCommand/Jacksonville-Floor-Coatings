@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Script from "next/script";
 import { FlakeStrip } from "@/components/FlakeStrip";
 import { PageHero, DesignCards, DesignImage, QuoteSection, GuideLinks } from "@/components/Design";
@@ -6,6 +7,13 @@ import { serviceDesign, navigationServices } from "@/lib/design";
 import { site, type ServicePageData } from "@/lib/site";
 export function ServicePage({ data }: { data: ServicePageData }) {
  const design=serviceDesign[data.slug];
+ const finishImages: Record<string,string> = {
+  "/garage-floor-coatings":"/images/home/garage.webp",
+  "/polyaspartic-floor-coatings":"/images/home/hero.webp",
+  "/metallic-epoxy-flooring":"/images/finishes/coastal-smoke.webp",
+  "/residential-resin-flooring":"/images/finishes/champagne-vein.webp",
+  "/commercial-floor-coatings":"/images/garage-details/uv-open-door.webp",
+ };
  const garageDetailImages = [
   {src:"/images/garage-details/full-flake-system.webp",alt:"Finished garage with a dense gray full-flake floor coating design"},
   {src:"/images/garage-details/cracks-failed-coatings.webp",alt:"Garage concrete with a narrow crack and peeling old coating before preparation"},
@@ -24,7 +32,7 @@ export function ServicePage({ data }: { data: ServicePageData }) {
  <section className="design-section shell design-split"><div><p className="jfc-script">A clear scope. A confident choice.</p><h2>What goes into your estimate?</h2><p>Actual square footage, existing coating removal, repairs, moisture requirements and the decorative build all influence the proposal.</p>{data.price ? <p className="design-callout">{data.price}</p> : null}<Link href="/learning-center/cost-pricing" className="text-link">Explore cost and pricing guides →</Link></div><div className="design-checklist"><h3>Compare proposals on the full scope.</h3><ul><li>Preparation method and removal work</li><li>Crack, spall and edge repairs</li><li>Base coat, decorative layer and topcoat</li><li>Texture, sheen and physical color sample</li><li>Access, cure schedule and aftercare</li><li>Written terms and any exclusions</li></ul></div></section>
  <section className="design-tint"><div className="shell design-split"><div><p className="jfc-script">Good questions. Clear answers.</p><h2>Before you book your floor.</h2><p>Choose the answer you need, or send us the details of your space for a project-specific recommendation.</p></div><div className="design-faq">{data.faqs.map(faq=><details key={faq.q}><summary>{faq.q}</summary><p>{faq.a}</p></details>)}</div></div></section>
  <GuideLinks category={design.category}/>
- <section className="design-related shell"><h2>Find the finish for your space.</h2><div>{navigationServices.filter(s=>s.href!==`/${data.slug}`).map(s=><Link key={s.href} href={s.href}>{s.title} →</Link>)}</div></section>
+ <section className="design-related design-finish-links shell"><h2>Find the finish for your space.</h2><div>{navigationServices.filter(s=>s.href!==`/${data.slug}`).map(s=><Link className="design-finish-link" key={s.href} href={s.href}><Image src={finishImages[s.href]} alt="" fill sizes="(max-width:600px) 100vw, (max-width:1000px) 50vw, 25vw"/><span>{s.title}<span aria-hidden="true">→</span></span></Link>)}</div></section>
  <QuoteSection/>
  <Script id={`schema-${data.slug}`} type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/>
  </main>;
