@@ -45,7 +45,8 @@ export default async function LearningCategoryPage({ params }: Props) {
   if (!category) notFound();
 
   const articles = getCategoryArticles(category.slug);
-  const costFloorImages = ["gray", "blue", "tan", "red", "jax-custom"];
+  const flakeFloorImages = ["gray", "blue", "tan", "red", "jax-custom"];
+  const showFlakeFloors = ["cost-pricing", "garage-floors", "florida-jacksonville"].includes(category.slug);
   const canonical = `${site.url}/learning-center/${category.slug}`;
   const schema = {
     "@context": "https://schema.org",
@@ -103,7 +104,7 @@ export default async function LearningCategoryPage({ params }: Props) {
         <section className={styles.categoryList} aria-label={`${category.name} guides`}>
           {articles.map((article, index) => (
             <Link className={styles.categoryArticle} href={articlePath(article)} key={article.slug}>
-              <div className={styles.listPhoto}><Image src={category.slug === "cost-pricing" ? `/images/learning/cost-floors/${costFloorImages[index]}.webp` : categoryImages[category.slug]} alt={category.slug === "cost-pricing" ? `${["Gray", "Blue", "Tan", "Red", "Teal, black and gold custom"][index]} flake garage floor design visualization` : ""} fill sizes="(max-width:640px) 100vw, 160px"/><span>{String(index + 1).padStart(2, "0")}</span></div>
+              <div className={styles.listPhoto}><Image src={showFlakeFloors ? `/images/learning/cost-floors/${flakeFloorImages[index]}.webp` : categoryImages[category.slug]} alt={showFlakeFloors ? `${["Gray", "Blue", "Tan", "Red", "Teal, black and gold custom"][index]} flake garage floor design visualization` : ""} fill sizes="(max-width:640px) 100vw, 160px"/><span>{String(index + 1).padStart(2, "0")}</span></div>
               <div>
                 <h2>{article.title}</h2>
                 <p>{article.description}</p>
@@ -113,7 +114,7 @@ export default async function LearningCategoryPage({ params }: Props) {
           ))}
         </section>
 
-        {category.slug === "cost-pricing" ? <p className={styles.imageNote}>Floor images are design visualizations, not completed projects. Custom colors are confirmed with physical samples.</p> : null}
+        {showFlakeFloors ? <p className={styles.imageNote}>Floor images are design visualizations, not completed projects. Custom colors are confirmed with physical samples.</p> : null}
 
         <section className={styles.hubFooter}>
           <h2>Need the service page instead?</h2>
