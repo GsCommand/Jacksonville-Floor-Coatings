@@ -18,6 +18,9 @@ export function QuoteSection({title="Let’s plan your floor.",copy="Tell us abo
 export function GuideLinks({category}: {category:string}) {
  const guides=getCategoryArticles(category).slice(0,3);
  const guideImages: Record<string,string> = {
+  "does-florida-humidity-affect-epoxy-flooring":"/images/learning/guide-moisture.webp",
+  "best-time-of-year-install-epoxy-jacksonville":"/images/learning/topic-florida.webp",
+  "does-florida-sun-damage-epoxy-garage-floor":"/images/garage-details/uv-open-door.webp",
   "best-garage-floor-coating-florida":"/images/learning/guide-best-garage.webp",
   "epoxy-vs-polyaspartic-garage-floor":"/images/learning/topic-garage.webp",
   "full-flake-vs-solid-color-garage-floor":"/images/learning/guide-epoxy-polyaspartic.webp",
