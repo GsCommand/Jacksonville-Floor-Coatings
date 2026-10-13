@@ -56,6 +56,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       { "@type": "Place", name: "Nocatee, Florida" },
       { "@type": "Place", name: "Ponte Vedra, Florida" },
       { "@type": "AdministrativeArea", name: "St. Johns County, Florida" },
+      { "@type": "AdministrativeArea", name: "Clay County, Florida" },
       { "@type": "AdministrativeArea", name: "Duval County, Florida" },
     ],
     description: site.description,

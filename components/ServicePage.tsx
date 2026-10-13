@@ -20,7 +20,7 @@ export function ServicePage({ data }: { data: ServicePageData }) {
   {src:"/images/garage-details/uv-open-door.webp",alt:"Sunlight reaching a flake garage floor through an open garage door"},
  ];
  const detailCards=data.details?.map((item,index)=>data.slug === "garage-floor-coatings" ? {...item,image:garageDetailImages[index]} : item);
- const schema=[{"@context":"https://schema.org","@type":"Service",name:data.eyebrow,description:data.metaDescription,url:`${site.url}/${data.slug}`,provider:{"@id":`${site.url}/#business`},areaServed:["Jacksonville, FL","Nocatee, FL","Ponte Vedra, FL","St. Johns County, FL"]},{"@context":"https://schema.org","@type":"FAQPage",mainEntity:data.faqs.map(faq=>({"@type":"Question",name:faq.q,acceptedAnswer:{"@type":"Answer",text:faq.a}}))}];
+ const schema=[{"@context":"https://schema.org","@type":"Service",name:data.eyebrow,description:data.metaDescription,url:`${site.url}/${data.slug}`,provider:{"@id":`${site.url}/#business`},areaServed:["Jacksonville, FL","Nocatee, FL","Ponte Vedra, FL","St. Johns County, FL","Clay County, FL"]},{"@context":"https://schema.org","@type":"FAQPage",mainEntity:data.faqs.map(faq=>({"@type":"Question",name:faq.q,acceptedAnswer:{"@type":"Answer",text:faq.a}}))}];
  return <main id="main-content">
  <PageHero eyebrow={data.eyebrow} title={data.title} intro={data.intro} image={design.image}/>
  {["garage-floor-coatings", "polyaspartic-floor-coatings", "commercial-floor-coatings"].includes(data.slug) ? <FlakeStrip /> : null}

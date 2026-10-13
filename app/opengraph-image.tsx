@@ -25,7 +25,7 @@ export default function Image() {
       </div>
       <div style={{ display: "flex", flexDirection: "column", maxWidth: 920 }}>
         <div style={{ fontSize: 78, lineHeight: 0.98, letterSpacing: -3 }}>Epoxy flooring. Garage coatings. Designer resin.</div>
-        <div style={{ marginTop: 28, fontFamily: "sans-serif", fontSize: 24, color: "#544f49" }}>Jacksonville · Nocatee · Ponte Vedra · St. Johns</div>
+        <div style={{ marginTop: 28, fontFamily: "sans-serif", fontSize: 24, color: "#544f49" }}>Jacksonville · Nocatee · Ponte Vedra · St. Johns · Clay County</div>
       </div>
     </div>,
     size,

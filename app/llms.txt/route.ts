@@ -40,6 +40,7 @@ export function GET() {
     `- [Nocatee Floor Coatings](${site.url}/service-areas/nocatee-floor-coatings): Nocatee floor-coating service area.`,
     `- [Ponte Vedra Floor Coatings](${site.url}/service-areas/ponte-vedra-floor-coatings): Ponte Vedra floor-coating service area.`,
     `- [St. Johns Floor Coatings](${site.url}/service-areas/st-johns-floor-coatings): St. Johns floor-coating service area.`,
+    `- [Clay County Floor Coatings](${site.url}/service-areas/clay-county-floor-coatings): Orange Park, Fleming Island, Middleburg and Green Cove Springs floor-coating service area.`,
     "",
     "## Company",
     `- [About Jacksonville Floor Coatings](${site.url}/about): Company and service approach.`,

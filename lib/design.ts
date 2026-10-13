@@ -10,6 +10,7 @@ export const serviceAreas = [
   ["Nocatee", "/service-areas/nocatee-floor-coatings"],
   ["Ponte Vedra", "/service-areas/ponte-vedra-floor-coatings"],
   ["St. Johns", "/service-areas/st-johns-floor-coatings"],
+  ["Clay County", "/service-areas/clay-county-floor-coatings"],
 ];
 export const categoryImages: Record<string, string> = {
   "cost-pricing": "/images/home/garage.webp",

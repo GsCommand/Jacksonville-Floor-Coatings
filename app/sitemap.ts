@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${site.url}/service-areas/nocatee-floor-coatings`, priority: 0.8, changeFrequency: "monthly" },
     { url: `${site.url}/service-areas/ponte-vedra-floor-coatings`, priority: 0.8, changeFrequency: "monthly" },
     { url: `${site.url}/service-areas/st-johns-floor-coatings`, priority: 0.8, changeFrequency: "monthly" },
+    { url: `${site.url}/service-areas/clay-county-floor-coatings`, priority: 0.8, changeFrequency: "monthly" },
     { url: `${site.url}/service-areas/jacksonville-floor-coatings`, priority: 0.7, changeFrequency: "monthly" },
     { url: `${site.url}/about`, priority: 0.6, changeFrequency: "yearly" },
     { url: `${site.url}/contact`, priority: 0.7, changeFrequency: "yearly" },

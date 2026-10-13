@@ -71,7 +71,7 @@ export const servicePages: Record<string, ServicePageData> = {
     slug: "garage-floor-coatings",
     eyebrow: "Garage Floor Coatings Jacksonville",
     title: "Garage floor coatings that look finished and are built for everyday use.",
-    intro: "Professional garage floor coating systems for Jacksonville, Nocatee, Ponte Vedra and St. Johns County, including full-flake, quartz, solid-color and resinous systems selected around the slab and the way the garage is used.",
+    intro: "Professional garage floor coating systems for Jacksonville, Nocatee, Ponte Vedra, St. Johns County and Clay County, including full-flake, quartz, solid-color and resinous systems selected around the slab and the way the garage is used.",
     metaDescription: "Garage floor coatings in Jacksonville, FL. Mechanical concrete preparation, crack repair, full-flake and polyaspartic garage floor systems.",
     price: "Most garage projects are quoted after square footage, coating removal, crack repair and slab condition are confirmed.",
     applications: ["2-car garages", "3-car garages", "Workshops", "Home gyms", "Storage garages", "Luxury garages"],
